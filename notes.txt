@@ -1,0 +1,17 @@
+react-router tut:
+>>>>>>>>>>>>>>>>>>>>>>> https://github.com/reactjs/react-router-tutorial <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+images:
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/582777636b8f5be4d01d2e49/1478981476778/IMG_7142+2.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/582777e01b631bf14c152583/1478981603429/IMG_7145.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/582b683ce6f2e1c6c87d49e6/1479239800579/nike+training+club+tisci_084.jpg
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586e9c438419c24df5eb93d7/1483643974385/nike+training+club+tisci_089.jpg
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586e9c4c46c3c4d49594849b/1483643983506/nike+training+club+tisci_092.jpg
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586eef6d03596ef0b9039378/1483665262566/IMG_1405.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586e9bcae3df282753d8f7af/1483643853781/IMG_3818.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586e9c0dbebafbc660b28fe5/1483643919231/SaltFlats.jpg
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/58c5abebf7e0ab65660e2c6d/1489349611891/JacySandOnFace-2.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/58c5abfdf7e0ab65660e2db5/1489349630339/JacyInWhiteSands.jpeg
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/586e9c36d482e91c7a75ebf1/1483643959173/image1.JPG
+https://static1.squarespace.com/static/563ecbf9e4b0e5c70f6bbe64/563ecc60e4b04da4140fb988/58c5ac13f7e0ab65660e2f08/1489349652447/JacyinGrass.JPG
