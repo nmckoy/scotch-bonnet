@@ -22,7 +22,7 @@ export default React.createClass({
             document.getElementById('main-nav').setAttribute('style', 'min-height: 35px; background-color: rgba(0, 0, 0, 1)')
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 0px;')
         } else {
-            document.getElementById('main-nav').setAttribute('style', 'min-height: 100px; background-color: rgba(34, 34, 34, 0.70)')
+            document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.70)')
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 20px;')
         }
     },
@@ -42,15 +42,14 @@ export default React.createClass({
                           <Navbar.Toggle />
                         </Navbar.Header>
                         <Navbar.Collapse>
-                          <Nav>
-                            <NavItem eventKey={1} href="#">About</NavItem>
-                            <LinkContainer to="/contact">
-                                <NavItem eventKey={2}>Contact Us</NavItem>
-                            </LinkContainer>
-                          </Nav>
                           <Nav pullRight>
-                            <NavItem eventKey={1} href="#">Locations</NavItem>
-                            <NavItem eventKey={2} href="#">Purchase</NavItem>
+                            <NavItem eventKey={1} href="#">HOME</NavItem>
+                            <NavItem eventKey={2} href="#">ABOUT</NavItem>
+                            <LinkContainer to="/contact">
+                                <NavItem eventKey={3}>CONTACT</NavItem>
+                            </LinkContainer>
+                            <NavItem eventKey={4} href="#">LOCATIONS</NavItem>
+                            <NavItem eventKey={5} href="#">PURCHASE</NavItem>
                           </Nav>
                         </Navbar.Collapse>
                     </div>

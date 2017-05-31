@@ -21383,7 +21383,7 @@ exports.default = _react2.default.createClass({
             document.getElementById('main-nav').setAttribute('style', 'min-height: 35px; background-color: rgba(0, 0, 0, 1)');
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 0px;');
         } else {
-            document.getElementById('main-nav').setAttribute('style', 'min-height: 100px; background-color: rgba(34, 34, 34, 0.70)');
+            document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.70)');
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 20px;');
         }
     },
@@ -21419,34 +21419,35 @@ exports.default = _react2.default.createClass({
                         null,
                         _react2.default.createElement(
                             _reactBootstrap.Nav,
-                            null,
+                            { pullRight: true },
                             _react2.default.createElement(
                                 _reactBootstrap.NavItem,
                                 { eventKey: 1, href: '#' },
-                                'About'
+                                'HOME'
+                            ),
+                            _react2.default.createElement(
+                                _reactBootstrap.NavItem,
+                                { eventKey: 2, href: '#' },
+                                'ABOUT'
                             ),
                             _react2.default.createElement(
                                 _reactRouterBootstrap.LinkContainer,
                                 { to: '/contact' },
                                 _react2.default.createElement(
                                     _reactBootstrap.NavItem,
-                                    { eventKey: 2 },
-                                    'Contact Us'
+                                    { eventKey: 3 },
+                                    'CONTACT'
                                 )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _reactBootstrap.Nav,
-                            { pullRight: true },
-                            _react2.default.createElement(
-                                _reactBootstrap.NavItem,
-                                { eventKey: 1, href: '#' },
-                                'Locations'
                             ),
                             _react2.default.createElement(
                                 _reactBootstrap.NavItem,
-                                { eventKey: 2, href: '#' },
-                                'Purchase'
+                                { eventKey: 4, href: '#' },
+                                'LOCATIONS'
+                            ),
+                            _react2.default.createElement(
+                                _reactBootstrap.NavItem,
+                                { eventKey: 5, href: '#' },
+                                'PURCHASE'
                             )
                         )
                     )

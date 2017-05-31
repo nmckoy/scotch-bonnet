@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "build-ss": "webpack && cp ./client/scripts/* ./squarespace/scripts/ && cp ./client/index.html ./squarespace/site.region",
+    "build-ss": "webpack && cp -r ./client/scripts/* ./squarespace/scripts/ && cp -r ./client/assets/* ./squarespace/assets/ && cp ./client/index.html ./squarespace/site.region",
     "server": "echo 'https://scotch-bonnet-nmckoy.c9users.io/' && babel-node server.js --presets es2015,stage-2,react",
     "node": "node server.js"
   }

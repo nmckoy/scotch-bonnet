@@ -6,7 +6,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './client/scripts')
+    path: path.resolve(__dirname, './client/scripts/bundle')
   },
   module: {
     loaders: [
