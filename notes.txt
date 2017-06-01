@@ -1,4 +1,9 @@
+bitbucket project: https://bitbucket.org/nmckoy/scotch-bonnet
+
 react-router tut:
 >>>>>>>>>>>>>>>>>>>>>>> https://github.com/reactjs/react-router-tutorial <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 write scripts to checkout and deploy to ss with ss github url
+
+examples:
+http://www.amdiomethod.com/
