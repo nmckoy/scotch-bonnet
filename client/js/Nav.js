@@ -8,11 +8,14 @@ import EventListener, { withOptions } from 'react-event-listener'
 
 const nav_container_style = { 
     minHeight: '100px',
-    backgroundColor: 'rgba(34, 34, 34, 0.70)',
+    backgroundColor: 'rgba(34, 34, 34, 0.00)',
     borderColor: 'rgba(0, 0, 0, 0)'
 }
 const nav_content_style = {
-    padding: '20px'
+    padding: '22px'
+}
+const logo_link_style = {
+    padding: '0px'
 }
 
 export default React.createClass({
@@ -20,10 +23,10 @@ export default React.createClass({
         let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
         if (scrollTop > 80) {
             document.getElementById('main-nav').setAttribute('style', 'min-height: 35px; background-color: rgba(0, 0, 0, 1)')
-            document.getElementById('main-nav-content').setAttribute('style', 'padding: 0px;')
+            document.getElementById('main-nav-content').setAttribute('style', 'padding: 7px;')
         } else {
-            document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.70)')
-            document.getElementById('main-nav-content').setAttribute('style', 'padding: 20px;')
+            document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.00)')
+            document.getElementById('main-nav-content').setAttribute('style', 'padding: 22px;')
         }
     },
 
@@ -37,19 +40,23 @@ export default React.createClass({
                     <div id="main-nav-content" style={ nav_content_style } className="container-fluid">
                         <Navbar.Header>
                           <Navbar.Brand>
-                            <a href="#">LOGO</a>
+                            <a href="/" style={ logo_link_style } ><img src="/assets/imgs/jacy_logo_white_transparent_cropped.png" width="100" height="50"/></a>
                           </Navbar.Brand>
                           <Navbar.Toggle />
                         </Navbar.Header>
                         <Navbar.Collapse>
                           <Nav pullRight>
-                            <NavItem eventKey={1} href="#">HOME</NavItem>
-                            <NavItem eventKey={2} href="#">ABOUT</NavItem>
-                            <LinkContainer to="/contact">
-                                <NavItem eventKey={3}>CONTACT</NavItem>
+                            <LinkContainer to="/">
+                                <NavItem eventKey={1}>HOME</NavItem>
                             </LinkContainer>
-                            <NavItem eventKey={4} href="#">LOCATIONS</NavItem>
-                            <NavItem eventKey={5} href="#">PURCHASE</NavItem>
+                            <LinkContainer to="/about">
+                                <NavItem eventKey={2}>ABOUT US</NavItem>
+                            </LinkContainer>
+                            <NavItem eventKey={3} href="#">PORTFOLIO</NavItem>
+                            <NavItem eventKey={3} href="#">EVENTS</NavItem>
+                            <LinkContainer to="/contact">
+                                <NavItem eventKey={3}>CONTACT US</NavItem>
+                            </LinkContainer>
                           </Nav>
                         </Navbar.Collapse>
                     </div>

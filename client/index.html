@@ -3,6 +3,7 @@
     <head>
     	<link rel="shortcut icon" type="image/png" href="/assets/imgs/jacy_black_transparent.png" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.css" />
         <style>
         	.navbar-inverse .navbar-nav>.active>a, 
         	.navbar-inverse .navbar-nav>.active>a:focus, 
@@ -13,6 +14,11 @@
 			.navbar-inverse .navbar-nav>li>a {
 				color: #fff;
 				font-size: 20px;
+				font-family: impact;
+				letter-spacing: 1.25px;
+			}
+			.navbar-inverse {
+				border-color: rgba(0, 0, 0, 0);
 			}
 			
 			body, html {
@@ -23,7 +29,7 @@
 
 			.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1 {
 				position: relative;
-				opacity: 0.65;
+				opacity: 0.90;
 				background-attachment: fixed;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -31,7 +37,8 @@
 
 			}
 			.home-bgimg-1 {
-				background-image: url("/assets/imgs/jacy_headshot.jpg");
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("/assets/imgs/jacy_murica.jpg");
+				/*background-image: url("/assets/imgs/jacy_murica.jpg");*/
 				min-height: 500px;
 			}
 
@@ -50,8 +57,16 @@
 			}
 			
 			.contact-bgimg-1 {
-				background-image: url("/assets/imgs/jacy_murica.jpg");
+				background-image: url("/assets/imgs/jacy_headshot.jpg");
 				min-height: 700px;
+			}
+			.home-bgimg-1 .caption {
+				position: absolute;
+				left: 0;
+				top: 25%;
+				width: 100%;
+				text-align: center;
+				color: #000;
 			}
 
 			.caption {
@@ -64,11 +79,11 @@
 			}
 
 			.caption span.border {
-				background-color: #111;
+				background-color: rgba(0, 0, 0, 0);
 				color: #fff;
 				padding: 18px;
-				font-size: 25px;
-				letter-spacing: 10px;
+				font-size: 18px;
+				letter-spacing: 5px;
 			}
 
 			h3 {
@@ -101,4 +116,13 @@
     <script src="/scripts/bundle/bundle.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelement-and-player.min.js"></script>
+    
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		// init mediaelementplayer
+    		$('#jacy-media-player').mediaelementplayer();
+    	});
+    </script>
 </html>

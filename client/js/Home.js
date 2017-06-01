@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 // https://facebook.github.io/react/docs/dom-elements.html#style
 const text_content_lead = {color: '#777', backgroundColor: 'white', textAlign: 'center', padding: '50px 80px', textAlign: 'justify'}
 const text_content_lead_header = {textAlign: 'center'}
@@ -8,13 +9,20 @@ const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', col
 const text_content_sub = { color: '#ddd', backgroundColor: '#282E34', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
 const text_content_sub_pos = { position:'relative' }
 
+const bgimg_first_logo_style = { padding: '15px' }
+const bgimg_first_button_style = { padding: '10px' }
+
 export default React.createClass({
   
   render() {
     return  <div>
               <div className="home-bgimg-1">
           			<div className="caption">
-          				<span className="border">STUB</span>
+          				<div><span className="border">WHERE WORKING OUT MEETS WORKING IN</span></div>
+          				<div><span className="border"><img style={ bgimg_first_logo_style } src="/assets/imgs/jacy_logo_white_transparent_cropped.png" width="330" height="180"/></span></div>
+          				<div><span className="border">by</span></div>
+          				<div><span className="border">JACY CUNNINGHAM</span></div>
+          				<div style={ bgimg_first_button_style }><Button bsSize="large">EXPERIENCE</Button></div>
           			</div>
           		</div>
           
@@ -35,7 +43,7 @@ export default React.createClass({
           			</div>
           		</div>
           
-          		<div className="home-bgimg-3">
+          		{/*<div className="home-bgimg-3">
           			<div className="caption">
           				<span className="border" style={ bgimg_sub_button }>STUB HERE</span>
           			</div>
@@ -55,7 +63,7 @@ export default React.createClass({
           		<div style={ text_content_lead }>
           			<h3 style={ text_content_lead_header }>FOOTER</h3>
           			<p>STUB FOOTER CONTENT</p>
-          		</div>
+          		</div> */}
         		</div>
     }
 })
