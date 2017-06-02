@@ -27,7 +27,7 @@
 				color: #777;
 			}
 
-			.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1 {
+			.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1, .about-bgimg-1 {
 				position: relative;
 				opacity: 0.90;
 				background-attachment: fixed;
@@ -57,8 +57,14 @@
 			}
 			
 			.contact-bgimg-1 {
-				background-image: url("/assets/imgs/jacy_headshot.jpg");
-				min-height: 700px;
+				background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0)), url("/assets/imgs/jacy_in_fields.jpg");
+				min-height: 400px;
+				background-position: center top;
+			}
+			.about-bgimg-1 {
+				background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0)), url("/assets/imgs/jacy_explaining.jpg");
+				min-height: 400px;
+				background-position: center;
 			}
 			.home-bgimg-1 .caption {
 				position: absolute;
@@ -122,7 +128,7 @@
     <script type="text/javascript">
     	$(document).ready(function(){
     		// init mediaelementplayer
-    		$('#jacy-media-player').mediaelementplayer();
+    		$('video, audio').mediaelementplayer();
     	});
     </script>
 </html>

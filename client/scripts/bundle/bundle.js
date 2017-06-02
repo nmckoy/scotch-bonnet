@@ -21429,21 +21429,55 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var text_content_lead = _defineProperty({ color: '#777', backgroundColor: 'white', textAlign: 'center', padding: '150px 80px' }, 'textAlign', 'justify');
+var text_content_lead_header = { textAlign: 'center' };
+
+var text_content_sub = _defineProperty({ color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px' }, 'textAlign', 'justify');
+var text_content_sub_pos = { position: 'relative' };
+
 exports.default = _react2.default.createClass({
-  displayName: "About",
+  displayName: 'About',
   render: function render() {
     return _react2.default.createElement(
-      "div",
+      'div',
       null,
       _react2.default.createElement(
-        "h1",
-        null,
-        "About"
+        'div',
+        { className: 'about-bgimg-1' },
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          _react2.default.createElement('span', { className: 'border' })
+        )
       ),
       _react2.default.createElement(
-        "video",
-        { width: "320", height: "240", id: "jacy-media-player" },
-        _react2.default.createElement("source", { type: "video/vimeo", src: "https://vimeo.com/213865399" })
+        'div',
+        { style: text_content_lead },
+        _react2.default.createElement(
+          'h3',
+          { style: text_content_lead_header },
+          'Stub About'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'My money\'s in that office, right? If she start giving me some bullshit about it ain\'t there, and we got to go someplace else and get it, I\'m gonna shoot you in the head then and there. Then I\'m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I\'m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { style: text_content_sub_pos },
+        _react2.default.createElement(
+          'div',
+          { style: text_content_sub },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Your bones don\'t break, mine do. That\'s clear. Your cells react to bacteria and viruses differently than mine. You don\'t get sick, I do. That\'s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We\'re on the same curve, just on opposite ends.'
+          )
+        )
       )
     );
   }
@@ -21512,6 +21546,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var text_content_lead = _defineProperty({ color: '#777', backgroundColor: 'white', textAlign: 'center', padding: '150px 80px' }, 'textAlign', 'justify');
 var text_content_lead_header = { textAlign: 'center' };
 
+var text_content_sub = _defineProperty({ color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px' }, 'textAlign', 'justify');
+var text_content_sub_pos = { position: 'relative' };
+
 exports.default = _react2.default.createClass({
   displayName: 'Contact',
   render: function render() {
@@ -21524,11 +21561,7 @@ exports.default = _react2.default.createClass({
         _react2.default.createElement(
           'div',
           { className: 'caption' },
-          _react2.default.createElement(
-            'span',
-            { className: 'border' },
-            'STUB'
-          )
+          _react2.default.createElement('span', { className: 'border' })
         )
       ),
       _react2.default.createElement(
@@ -21543,6 +21576,19 @@ exports.default = _react2.default.createClass({
           'p',
           null,
           'My money\'s in that office, right? If she start giving me some bullshit about it ain\'t there, and we got to go someplace else and get it, I\'m gonna shoot you in the head then and there. Then I\'m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I\'m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { style: text_content_sub_pos },
+        _react2.default.createElement(
+          'div',
+          { style: text_content_sub },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Your bones don\'t break, mine do. That\'s clear. Your cells react to bacteria and viruses differently than mine. You don\'t get sick, I do. That\'s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We\'re on the same curve, just on opposite ends.'
+          )
         )
       )
     );
@@ -21576,11 +21622,11 @@ var text_content_lead_header = { textAlign: 'center' };
 
 var bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' };
 
-var text_content_sub = _defineProperty({ color: '#ddd', backgroundColor: '#282E34', textAlign: 'center', padding: '50px 80px' }, 'textAlign', 'justify');
+var text_content_sub = _defineProperty({ color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px' }, 'textAlign', 'justify');
 var text_content_sub_pos = { position: 'relative' };
 
 var bgimg_first_logo_style = { padding: '15px' };
-var bgimg_first_button_style = { padding: '10px' };
+var bgimg_first_button_style = { padding: '30px' };
 
 exports.default = _react2.default.createClass({
   displayName: 'Home',
@@ -21635,7 +21681,7 @@ exports.default = _react2.default.createClass({
             { style: bgimg_first_button_style },
             _react2.default.createElement(
               _reactBootstrap.Button,
-              { bsSize: 'large' },
+              { target: '_blank', href: 'https://vimeo.com/211186589?autoplay=1', bsSize: 'large' },
               'EXPERIENCE'
             )
           )
@@ -21658,15 +21704,7 @@ exports.default = _react2.default.createClass({
       _react2.default.createElement(
         'div',
         { className: 'home-bgimg-2' },
-        _react2.default.createElement(
-          'div',
-          { className: 'caption' },
-          _react2.default.createElement(
-            'span',
-            { className: 'border', style: bgimg_sub_button },
-            'STUB UP DERE'
-          )
-        )
+        _react2.default.createElement('div', null)
       ),
       _react2.default.createElement(
         'div',

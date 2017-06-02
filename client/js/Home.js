@@ -6,11 +6,11 @@ const text_content_lead_header = {textAlign: 'center'}
 
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
 
-const text_content_sub = { color: '#ddd', backgroundColor: '#282E34', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
+const text_content_sub = { color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
 const text_content_sub_pos = { position:'relative' }
 
 const bgimg_first_logo_style = { padding: '15px' }
-const bgimg_first_button_style = { padding: '10px' }
+const bgimg_first_button_style = { padding: '30px' }
 
 export default React.createClass({
   
@@ -22,7 +22,7 @@ export default React.createClass({
           				<div><span className="border"><img style={ bgimg_first_logo_style } src="/assets/imgs/jacy_logo_white_transparent_cropped.png" width="330" height="180"/></span></div>
           				<div><span className="border">by</span></div>
           				<div><span className="border">JACY CUNNINGHAM</span></div>
-          				<div style={ bgimg_first_button_style }><Button bsSize="large">EXPERIENCE</Button></div>
+          				<div style={ bgimg_first_button_style }><Button target="_blank" href="https://vimeo.com/211186589?autoplay=1" bsSize="large">EXPERIENCE</Button></div>
           			</div>
           		</div>
           
@@ -32,9 +32,11 @@ export default React.createClass({
           		</div>
           
           		<div className="home-bgimg-2">
-          			<div className="caption">
-          				<span className="border" style={ bgimg_sub_button }>STUB UP DERE</span>
-          			</div>
+          		  <div>
+                 {/* <video width="100%" height="auto" id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
+                    <source type="video/mp4" src="/assets/imgs/jacy_in_action.mp4" />
+                  </video> */}
+                </div>
           		</div>
           
           		<div style={ text_content_sub_pos }>
