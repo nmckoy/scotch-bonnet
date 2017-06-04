@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	font-size: 20px;
+	font-family: impact;
+	letter-spacing: 1.25px;
+}
+.navbar-inverse {
+	border-color: rgba(0, 0, 0, 0);
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	color: #777;
+}
+
+.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1, .about-bgimg-1, .events-bgimg-1, .portfolio-bgimg-1 {
+	position: relative;
+	opacity: 0.90;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.home-bgimg-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("/imgs/jacy_murica.jpg");
+	/*background-image: url("/imgs/jacy_murica.jpg");*/
+	min-height: 500px;
+}
+
+.home-bgimg-2 {
+	background-image: url("/imgs/jacy_about_page_banner.png");
+	min-height: 400px;
+}
+
+.home-bgimg-3 {
+	background-image: url("/imgs/jacy_torso.jpg");
+	min-height: 400px;
+}
+.home-bgimg-4 {
+	background-image: url("/imgs/jacy_explaining.jpg");
+	min-height: 400px;
+}
+
+.contact-bgimg-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	min-height: 350px;
+	background-position: center;
+}
+.about-bgimg-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	min-height: 350px;
+	background-position: center;
+}
+.events-bgimg-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	min-height: 350px;
+	background-position: center;
+}
+.portfolio-bgimg-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	min-height: 350px;
+	background-position: center;
+}
+.home-bgimg-1 .caption {
+	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	padding: 18px;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+}
+
+#main-nav, #main-nav-content {
+   	-webkit-transition: all 0.4s ease;
+   	transition: all 0.4s ease;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1 {
+		background-attachment: scroll;
+	}
+}

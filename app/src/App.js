@@ -1,10 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React, { Component } from 'react'
 
-import Nav from './Nav'
-import Home from './Home'
+// import { Link } from 'react-router'
 
-export default React.createClass({
+import AppNav from './components/AppNav'
+import Home from './pages/Home'
+import Footer from './components/Footer'
+
+class App extends Component {
   render() {
     return (
       <div>
@@ -12,7 +14,8 @@ export default React.createClass({
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>*/}
-        <Nav />
+        
+        <AppNav />
         
         {/* children components of App get swapped out here */}
         { this.props.children ?
@@ -20,8 +23,10 @@ export default React.createClass({
         :
           (<Home />) // default homepage
         } 
-
+        <Footer/>
       </div>
     )
   }
-})
+}
+
+export default App

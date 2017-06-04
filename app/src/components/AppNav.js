@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
 // http://stackoverflow.com/questions/35687353/react-bootstrap-link-item-in-a-navitem
@@ -18,8 +18,9 @@ const logo_link_style = {
     padding: '0px'
 }
 
-export default React.createClass({
-    resizeNav: function(event) {
+class AppNav extends Component {
+    
+    resizeNav(event) {
         let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
         if (scrollTop > 80) {
             document.getElementById('main-nav').setAttribute('style', 'min-height: 35px; background-color: rgba(0, 0, 0, 1)')
@@ -28,10 +29,9 @@ export default React.createClass({
             document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.00)')
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 22px;')
         }
-    },
+    }
 
-    render: function() {
-
+    render() {
         return (
             <div>
                 <EventListener target="window" onScroll={ this.resizeNav }/>
@@ -40,7 +40,7 @@ export default React.createClass({
                     <div id="main-nav-content" style={ nav_content_style } className="container-fluid">
                         <Navbar.Header>
                           <Navbar.Brand>
-                            <a href="/" style={ logo_link_style } ><img src="/assets/imgs/jacy_logo_white_transparent_cropped.png" width="100" height="50"/></a>
+                            <a href="/" style={ logo_link_style } ><img src="/imgs/jacy_logo_white_transparent_cropped.png" width="100" height="50"/></a>
                           </Navbar.Brand>
                           <Navbar.Toggle />
                         </Navbar.Header>
@@ -69,4 +69,6 @@ export default React.createClass({
         );
 
     }
-});
+}
+
+export default AppNav
