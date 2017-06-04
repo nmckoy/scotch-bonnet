@@ -3,12 +3,12 @@ import { Button } from 'react-bootstrap';
 
 import Footer from '../components/Footer'
 // https://facebook.github.io/react/docs/dom-elements.html#style
-const text_content_lead = {color: '#777', backgroundColor: 'white', textAlign: 'center', padding: '50px 80px', textAlign: 'justify'}
+const text_content_lead = {minHeight: '250px', color: '#777', backgroundColor: 'white', textAlign: 'center', padding: '25px', textAlign: 'justify'}
 const text_content_lead_header = {textAlign: 'center'}
 
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
 
-const text_content_sub = { minHeight: '300px', color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
+const text_content_sub = { minHeight: '300px', color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(243, 243, 243)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
 const text_content_sub_pos = { position:'relative' }
 
 const bgimg_first_logo_style = { padding: '15px' }
@@ -29,8 +29,24 @@ class Home extends Component {
         </div>
           
         <div style={ text_content_lead }>
-          <h3 style={ text_content_lead_header }>Stub Content</h3>
-          <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+          <div className='col-md-12 home-info-boxes'>
+            <div className='col-md-4 home-sub-box-container'>
+              <div className='home-sub-box1'>
+              </div>
+            </div>
+            <div className='col-md-4 home-sub-box-container'>
+              <div className='home-sub-box2'>
+              </div>
+            </div>
+            <div className='col-md-4 home-sub-box-container'>
+              <div className='home-sub-box3'>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style={ text_content_sub }>
+          
         </div>
           
         <div className="home-bgimg-2">
