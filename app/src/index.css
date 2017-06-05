@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .navbar-inverse .navbar-nav>.active>a, 
 .navbar-inverse .navbar-nav>.active>a:focus, 
@@ -14,6 +16,7 @@ body {
 	font-size: 20px;
 	font-family: impact;
 	letter-spacing: 1.25px;
+    letter-spacing: 0;
 }
 .navbar-inverse {
 	border-color: rgba(0, 0, 0, 0);
@@ -55,6 +58,7 @@ body, html {
 .home-sub-box1,
 .home-sub-box2,
 .home-sub-box3 {
+	border-radius: 3px;
 	position: relative;
 	opacity: 0.90;
 	background-position: center;
@@ -73,6 +77,18 @@ body, html {
 .home-sub-box3 {
 	background-image: linear-gradient(rgba(0, 233, 245, 0.3), transparent), url(/imgs/jacy_torso.jpg);
 	min-height: 200px;
+}
+
+.home-vid-box1 {
+	border-radius: 3px;
+	position: relative;
+	opacity: 0.90;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url(/imgs/jacy_about_page_banner.png);
+	min-height: 400px;
+	min-width: 100%;
 }
 
 .contact-bgimg-1 {
@@ -101,6 +117,28 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image: url("/imgs/jacy_black_transparent_trimmed.png");
+}
+.footer-social-buttons {
+	width: 51%;
+    margin: 5px auto 0 auto;
+}
+.footer-social-buttons .btn {
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	/* ...and now for the proper property */
+  	transition:.5s;
+  	
+    margin: au;
+}
+.footer-social-buttons .btn:hover {
+	background-color: transparent;
+	border-color: #fff8f7;
+}
+.footer-social-buttons .btn a {
+	color: #fff8f7;
+	font-size: 40px;
 }
 
 .home-bgimg-1 .caption {
@@ -160,6 +198,10 @@ h3 {
 }
 .footer-social-group-item-style li a {
 	color: black;
+}
+.footer-social-buttons button {
+	border-color: transparent;
+	background-color: transparent;
 }
 
 #main-nav, #main-nav-content {

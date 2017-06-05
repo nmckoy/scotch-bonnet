@@ -8,7 +8,7 @@ const text_content_lead_header = {textAlign: 'center'}
 
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
 
-const text_content_sub = { minHeight: '300px', color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(243, 243, 243)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
+const text_content_sub = { minHeight: '500px', color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(243, 243, 243)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
 const text_content_sub_pos = { position:'relative' }
 
 const bgimg_first_logo_style = { padding: '15px' }
@@ -28,25 +28,34 @@ class Home extends Component {
           </div>
         </div>
           
-        <div style={ text_content_lead }>
-          <div className='col-md-12 home-info-boxes'>
-            <div className='col-md-4 home-sub-box-container'>
-              <div className='home-sub-box1'>
+        <div style={ text_content_lead} className='container'>
+            <div className='col-md-12'>
+              <div className='col-md-4 home-sub-box-container'>
+                <div className='home-sub-box1'>
+                </div>
+              </div>
+              <div className='col-md-4 home-sub-box-container'>
+                <div className='home-sub-box2'>
+                </div>
+              </div>
+              <div className='col-md-4 home-sub-box-container'>
+                <div className='home-sub-box3'>
+                </div>
               </div>
             </div>
-            <div className='col-md-4 home-sub-box-container'>
-              <div className='home-sub-box2'>
-              </div>
-            </div>
-            <div className='col-md-4 home-sub-box-container'>
-              <div className='home-sub-box3'>
-              </div>
-            </div>
-          </div>
         </div>
         
         <div style={ text_content_sub }>
-          
+            <div className='col-md-12'>
+              <div className='col-md-6 home-sub-box-container'>
+                <div className='home-vid-box1'>
+                </div>
+              </div>
+              <div className='col-md-2'>
+              </div>
+              <div className='col-md-4'>
+              </div>
+            </div>
         </div>
           
         <div className="home-bgimg-2">

@@ -7,7 +7,7 @@ const text_content_sub = {
   color: 'rgb(35, 35, 35)',
   textAlign: 'center',
   padding: '30px 80px',
-  // https://uigradients.com/#Venice
+  // https://uigradients.com/#Passion
   textAlign: 'justify',
   background: '#e53935',  /* fallback for old browsers */
   background: '-webkit-linear-gradient(to right, #e35d5b, #e53935)',  /* Chrome 10-25, Safari 5.1-6 */
@@ -55,10 +55,11 @@ class Footer extends Component {
                       <div className='col-md-4'>
                       </div>
                       <div className='col-md-4'>
-                      <Button ><a href="https://www.facebook.com/jrhamz"><i className="fa fa-facebook" aria-hidden="true"></i></a></Button>
+                        <div className='footer-social-buttons'>
+                          <Button ><a href="https://www.facebook.com/jrhamz"><i className="fa fa-facebook" aria-hidden="true"></i></a></Button>
                           <Button ><a href="mailto:j@thejacymethod.com"><i className="fa fa-envelope" aria-hidden="true"></i></a></Button>
                           <Button ><a href="https://www.instagram.com/jacycunningham/"><i className="fa fa-instagram" aria-hidden="true"></i></a></Button>
-                        
+                        </div>
                       </div>
                       <div className='col-md-4'>
                       </div>
