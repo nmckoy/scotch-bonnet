@@ -9,7 +9,7 @@ body {
 .navbar-inverse .navbar-nav>.active>a:focus, 
 .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
 }
 .navbar-inverse .navbar-nav>li>a {
 	color: #fff;
@@ -41,20 +41,26 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 .home-bgimg-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("/imgs/jacy_murica.jpg");
-	/*background-image: url("/imgs/jacy_murica.jpg");*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/13DHFrN.jpg"); /* jacy_murica */
+	/*background-image: url("/assets/jacy_murica.jpg");*/
 	min-height: 500px;
 }
 .home-bgimg-2 {
-	background-image: url("/imgs/jacy_explaining.jpg");
+	background-image: url("http://i.imgur.com/4YzgE9x.jpg"); /* jacy_explaining.jpg */
 	min-height: 400px;
 }
 .home-sub-box-container {
 	padding-bottom: 10px
 }
+.home-sub-box-container a {
+	text-decoration: none;
+	color: black;
+	font-family: impact;
+	font-size: 24px;
+}
+
 .home-sub-box1,
 .home-sub-box2,
 .home-sub-box3 {
@@ -67,16 +73,45 @@ body, html {
 }
 
 .home-sub-box1 {
-	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url(/imgs/jacy_about_page_banner.png);
+	padding-top: 80px;
+	background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/fpvuHJJ.png"); /* jacy_about_page_banner.png */
 	min-height: 200px;
 }
 .home-sub-box2 {
-	background-image: linear-gradient(rgba(4, 0, 230, 0.3), transparent), url(/imgs/jacy_headshot.jpg);
+	padding-top: 80px;
+	background-image: linear-gradient(rgba(4, 0, 230, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/6qmVIse.jpg"); /* jacy_headshot.jpg */
 	min-height: 200px;
 }
 .home-sub-box3 {
-	background-image: linear-gradient(rgba(0, 233, 245, 0.3), transparent), url(/imgs/jacy_torso.jpg);
+	padding-top: 80px;
+	background-image: linear-gradient(rgba(0, 233, 245, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/1xuPNvY.jpg"); /* jacy_torso */
 	min-height: 200px;
+}
+.home-sub-box1:hover .home-sub-link-banner {
+	color: black;
+    background-color: #f3f3f3;
+}
+.home-sub-box2:hover .home-sub-link-banner {
+	color: black;
+    background-color: #f3f3f3;
+}
+.home-sub-box3:hover .home-sub-link-banner{
+	color: black;
+    background-color: #f3f3f3;
+}
+
+.home-sub-link-banner {
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	/* ...and now for the proper property */
+  	transition:.5s;
+  	
+	color: #f3f3f3;
+    padding: 10px;
+    background-color: transparent;
+    height: 55px;
 }
 
 .home-vid-box1 {
@@ -86,28 +121,28 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url(/imgs/jacy_about_page_banner.png);
+	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url("http://i.imgur.com/fpvuHJJ.png");
 	min-height: 400px;
 	min-width: 100%;
 }
 
 .contact-bgimg-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
 	min-height: 350px;
 	background-position: center;
 }
 .about-bgimg-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
 	min-height: 350px;
 	background-position: center;
 }
 .events-bgimg-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
 	min-height: 350px;
 	background-position: center;
 }
 .portfolio-bgimg-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/imgs/jacy_contact_page_banner.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
 	min-height: 350px;
 	background-position: center;
 }
@@ -116,7 +151,7 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-image: url("/imgs/jacy_black_transparent_trimmed.png");
+	background-image: url("http://i.imgur.com/aJrAZCn.png"); /* jacy_black_transparent_trimmed */
 }
 .footer-social-buttons {
 	width: 51%;

@@ -40,7 +40,10 @@ class AppNav extends Component {
                     <div id="main-nav-content" style={ nav_content_style } className="container-fluid">
                         <Navbar.Header>
                           <Navbar.Brand>
-                            <a href="/" style={ logo_link_style } ><img src="/imgs/jacy_logo_white_transparent_cropped.png" width="100" height="50"/></a>
+                            <a href="/" style={ logo_link_style } >
+                                <img src="http://i.imgur.com/1QTfNv5.png" width="100" height="50"/>
+                                {/* jacy_logo_white_transparent_cropped */}
+                            </a>
                           </Navbar.Brand>
                           <Navbar.Toggle />
                         </Navbar.Header>

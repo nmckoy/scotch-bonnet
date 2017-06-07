@@ -3,17 +3,327 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    
-    <link rel="shortcut icon" type="image/png" href="/assets/imgs/jacy_black_transparent.png" />
+    <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/1kQ8csC.png" /> <!-- jacy_black_transparent.png -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      body, html {
+      	height: 100%;
+      	margin: 0;
+      	color: #777;
+      	font-family: Arial;
+      }
+      
+      .navbar-inverse {
+        min-height: 100px;
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .navbar-inverse .navbar-nav>.active>a, 
+      .navbar-inverse .navbar-nav>.active>a:focus, 
+      .navbar-inverse .navbar-nav>.active>a:hover {
+          color: #fff;
+          background-color: transparent;
+      }
+      @media screen and (max-width: 767px) {
+      	.navbar-inverse .navbar-nav>.active>a, 
+        .navbar-inverse .navbar-nav>.active>a:focus, 
+        .navbar-inverse .navbar-nav>.active>a:hover  {
+      		color: #fff;
+          background-color: black;
+      	}
+      }
+      
+      .navbar-inverse .navbar-nav>li>a {
+      	color: #fff;
+      	font-size: 20px;
+      	font-family: impact;
+      	letter-spacing: 1.25px;
+        letter-spacing: 0;
+      }
+      .navbar-inverse {
+      	border-color: transparent;
+      }
+      
+      .home-bgimg-1,
+      .home-bgimg-2,
+      
+      .contact-bgimg-1,
+      .about-bgimg-1,
+      .events-bgimg-1,
+      .portfolio-bgimg-1 {
+      	position: relative;
+      	opacity: 0.90;
+      	background-attachment: fixed;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      }
+      .home-bgimg-1 {
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/13DHFrN.jpg"); /* jacy_murica */
+      	/*background-image: url("/assets/jacy_murica.jpg");*/
+      	min-height: 500px;
+      }
+      .home-bgimg-2 {
+      	background-image: url("http://i.imgur.com/4YzgE9x.jpg"); /* jacy_explaining.jpg */
+      	min-height: 400px;
+      }
+      .home-sub-box-container {
+      	padding-bottom: 10px
+      }
+      .home-sub-box-container a {
+      	text-decoration: none;
+      	color: black;
+      	font-family: impact;
+      	font-size: 24px;
+      }
+      
+      .home-sub-box1,
+      .home-sub-box2,
+      .home-sub-box3 {
+      	border-radius: 3px;
+      	position: relative;
+      	opacity: 0.90;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      }
+      
+      .home-sub-box1 {
+      	padding-top: 80px;
+      	background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/fpvuHJJ.png"); /* jacy_about_page_banner.png */
+      	min-height: 200px;
+      }
+      .home-sub-box2 {
+      	padding-top: 80px;
+      	background-image: linear-gradient(rgba(4, 0, 230, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/6qmVIse.jpg"); /* jacy_headshot.jpg */
+      	min-height: 200px;
+      }
+      .home-sub-box3 {
+      	padding-top: 80px;
+      	background-image: linear-gradient(rgba(0, 233, 245, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/1xuPNvY.jpg"); /* jacy_torso */
+      	min-height: 200px;
+      }
+      .home-sub-box1:hover .home-sub-link-banner {
+      	color: black;
+        background-color: #f3f3f3;
+      }
+      .home-sub-box2:hover .home-sub-link-banner {
+      	color: black;
+        background-color: #f3f3f3;
+      }
+      .home-sub-box3:hover .home-sub-link-banner{
+      	color: black;
+        background-color: #f3f3f3;
+      }
+      
+      .home-sub-link-banner {
+      	-o-transition:.5s;
+        	-ms-transition:.5s;
+        	-moz-transition:.5s;
+        	-webkit-transition:.5s;
+        	/* ...and now for the proper property */
+        	transition:.5s;
+        	
+      	color: #f3f3f3;
+          padding: 10px;
+          background-color: transparent;
+          height: 55px;
+      }
+      
+      .home-vid-box1 {
+      	border-radius: 3px;
+      	position: relative;
+      	opacity: 0.90;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url("http://i.imgur.com/fpvuHJJ.png");
+      	min-height: 400px;
+      	min-width: 100%;
+      }
+      
+      .contact-bgimg-1 {
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	min-height: 350px;
+      	background-position: center;
+      }
+      
+      .about-bgimg-1 {
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	min-height: 350px;
+      	background-position: center;
+      }
+      .about-content-img1 {
+      	
+        background-image: url("http://i.imgur.com/ij29ZzZ.jpg"); /* jacy_nike_training_club1 */
+      	min-height: 350px;
+      	background-position: center;
+      	background-size: cover;
+      	background-repeat: no-repeat;
+      	cursor: pointer;
+      }
+      .about-content-img1 .fa {
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition:.5s;
+      	/* ...and now for the proper property */
+      	transition:.5s;
+        	
+        color: white;
+        font-size: 70px;
+        margin-top: 15%;
+      }
+      .about-content-img1:hover .fa {
+        color: black;
+      }
+      .about-content-img1:hover {
+        background-image: linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/ij29ZzZ.jpg"); /* jacy_nike_training_club1 */
+      }
+      
+      .events-bgimg-1 {
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	min-height: 350px;
+      	background-position: center;
+      }
+      .portfolio-bgimg-1 {
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	min-height: 350px;
+      	background-position: center;
+      }
+      .footer-logo {
+      	min-height: 150px;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: contain;
+      	background-image: url("http://i.imgur.com/aJrAZCn.png"); /* jacy_black_transparent_trimmed */
+      }
+      .footer-social-buttons {
+      	width: 51%;
+          margin: 5px auto 0 auto;
+      }
+      .footer-social-buttons .btn {
+      	-o-transition:.5s;
+        	-ms-transition:.5s;
+        	-moz-transition:.5s;
+        	-webkit-transition:.5s;
+        	/* ...and now for the proper property */
+        	transition:.5s;
+        	
+          margin: au;
+      }
+      .footer-social-buttons .btn:hover {
+      	background-color: transparent;
+      	border-color: #fff8f7;
+      }
+      .footer-social-buttons .btn a {
+      	color: #fff8f7;
+      	font-size: 40px;
+      }
+      
+      .home-bgimg-1 .caption {
+      	position: absolute;
+      	left: 0;
+      	top: 25%;
+      	width: 100%;
+      	text-align: center;
+      	color: #000;
+      }
+      
+      .caption {
+      	position: absolute;
+      	left: 0;
+      	top: 50%;
+      	width: 100%;
+      	text-align: center;
+      	color: #000;
+      }
+      
+      .caption span.border {
+      	background-color: rgba(0, 0, 0, 0);
+      	color: #fff;
+      	padding: 18px;
+      	font-size: 16px;
+      	letter-spacing: 5px;
+      }
+      
+      /*h3 {*/
+      /*	letter-spacing: 5px;*/
+      /*	text-transform: uppercase;*/
+      /*	font: 20px "Lato", sans-serif;*/
+      /*	color: #111;*/
+      /*}*/
+      
+      .footer-group-item-style li {
+      	font-size: 12px;
+      	padding: 5px 15px;
+      	text-align: left;
+      	background-color: transparent;
+      	border: 0px solid transparent;
+      }
+      .footer-group-item-style li a {
+      	color: black;
+      }
+      .footer-group-item-style li #footer-links-title {
+      	color: black;
+      	font-size: 18px;
+      }
+      
+      .footer-social-group-item-style button {
+      	padding: 5px 15px;
+      	font-size: 80px;
+      	text-align: center;
+      	background-color: transparent;
+      	border: 0px solid transparent;
+      }
+      .footer-social-group-item-style li a {
+      	color: black;
+      }
+      .footer-social-buttons button {
+      	border-color: transparent;
+      	background-color: transparent;
+      }
+      
+      #main-nav, #main-nav-content {
+         	-webkit-transition: all 0.4s ease;
+         	transition: all 0.4s ease;
+      }
+      
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+      	.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1 {
+      		background-attachment: scroll;
+      	}
+      }
+    </style>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelement-and-player.min.js"></script>
 	  <script src="https://use.fontawesome.com/e17a64f862.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+	      $('#play-vid').magnificPopup({
+	          items: [{
+	            src: 'vimeo.com/211186589'
+	          }],
+	          type:'iframe'
+	        });
+	     // player = new MediaElementPlayer('video');
+  	   // $('video').on("play", function() {
+      //       player.enterFullScreen();
+      //   });
+	    })
+	  </script>
     <title>The Jacy Method</title>
   </head>
   <body>

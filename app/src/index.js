@@ -9,7 +9,7 @@ import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Events from './pages/Events'
 
-import './index.css';
+// import './index.css';
 
 render(
   <div>

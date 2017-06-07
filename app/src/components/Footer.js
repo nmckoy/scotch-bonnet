@@ -20,14 +20,6 @@ const text_content_sub_pos = {
   fontSize: '12px'
 }
 
-const footer_logo_style = {
-  minHeight: '200px',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'contain',
-  backgroundImage: "url('/imgs/jacy_black_transparent_trimmed.png')"
-}
-
 class Footer extends Component {
    
   render() {
@@ -47,7 +39,7 @@ class Footer extends Component {
                   </div> */}
                   <div className='row'>
                     <div className='col-md-12 footer-logo'>
-                      {/* <img src='/imgs/jacy_black_transparent_trimmed.png' width='300' height='150'/> */}
+                      {/* <img src='/assets/jacy_black_transparent_trimmed.png' width='300' height='150'/> */}
                     </div>
                   </div>
                   <div className='row'>
