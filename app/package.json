@@ -18,7 +18,7 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "echo 'app running here: https://scotch-bonnet-nmckoy.c9users.io/' && react-scripts start",
     "build": "echo 'starting react build...' && react-scripts build && echo 'build completed' && echo 'cleaning squarespace scripts directory' && rm ../template/scripts/main* && echo 'moving files to squarespace' && cp build/static/js/main* ../template/scripts/ && cp build/index.html ../template/site.region && sed -i 's/\\/static\\/js\\//\\/scripts\\//g' ../template/site.region && echo 'build finished; deploy to squarespace using git'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

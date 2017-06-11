@@ -20,13 +20,14 @@ class Home extends Component {
     return(
       <div>
         <div className="home-bgimg-1">
-          <div className="caption">
+          {/*jacy_white_transparent_cropped*/}
+          {/* <div className="caption">
           	<div><span className="border">WHERE WORKING OUT MEETS WORKING IN</span></div>
-          	<div><span className="border"><img style={ bgimg_first_logo_style } src="http://i.imgur.com/1QTfNv5.png" width="330" height="180"/>{/*jacy_white_transparent_cropped*/}</span></div>
+          	<div><span className="border"><img style={ bgimg_first_logo_style } src="http://i.imgur.com/1QTfNv5.png" width="330" height="180"/></span></div>
           	<div><span className="border">by</span></div>
           	<div><span className="border">JACY CUNNINGHAM</span></div>
           	<div style={ bgimg_first_button_style }><Button target="_blank" href="https://vimeo.com/211186589?autoplay=1" bsSize="large">EXPERIENCE</Button></div>
-          </div>
+          </div>*/}
         </div>
           
         <div style={ text_content_lead} className='container'>
