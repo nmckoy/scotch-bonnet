@@ -78,11 +78,11 @@ class Home extends Component {
             <div className='col-md-12'>
               <Grid >
                 <Row className='home-rows'> {/* Row 1 */}
-                  <Col xsOffset={1} xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} mdOffset={1} md={5} className='home-row-box-wrapper'>
                     <div id='home-row1-box1' className='home-box'>
                     </div>
                   </Col>
-                  <Col xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row1-box2' className='home-box'>
                       <h2>header1</h2>
                       <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
@@ -90,29 +90,29 @@ class Home extends Component {
                   </Col>
                 </Row>
                 <Row className='home-rows'> {/* Row 2 */}
-                  <Col xsOffset={2} xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} mdOffset={2} md={5} className='home-row-box-wrapper'>
                     <div id='home-row2-box1' className='home-box'>
                     </div>
                   </Col>
-                  <Col xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row2-box2' className='home-box'>
                       <h2>header2</h2>
-                      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. </p>
                     </div>
                   </Col>
                 </Row>
                 <Row className='home-rows'> {/* Row 3 */}
-                  <Col xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row3-box1' className='home-box'>
                     </div>
                   </Col>
-                  <Col xs={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row3-box2' className='home-box'>
                       <h2>header3</h2>
                       <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
                     </div>
                   </Col>
-                  <Col xs={2}></Col>
+                  <Col md={2}></Col>
                 </Row>
               </Grid>
             </div>
