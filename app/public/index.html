@@ -4,10 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/1kQ8csC.png" /> <!-- jacy_black_transparent.png -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <style>
+
+    <title>The Jacy Method</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelement-and-player.min.js"></script>
+	  <script src="https://use.fontawesome.com/e17a64f862.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <style>
       body {
         margin: 0;
         padding: 0;
@@ -96,58 +118,76 @@
       	background-size: cover;
       }
       
-      .home-sub-box1 {
+      .home-rows {
+        margin-top: 100px;
+      }
+      .home-row-box-wrapper {
+        position: relative;
+      }
+      #home-row1-box1 {
+        position: absolute;
+        right: 1200px;
+        
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      #home-row1-box1 {
       	padding-top: 80px;
       	background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/fpvuHJJ.png"); /* jacy_about_page_banner.png */
       	min-height: 200px;
       }
-      .home-sub-box2 {
+      #home-row1-box2 {
+        position: absolute;
+        left: 1200px;
+        
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      #home-row2-box1 {
+        position: absolute;
+        right: 1200px;
+        
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      #home-row2-box1 {
       	padding-top: 80px;
       	background-image: linear-gradient(rgba(4, 0, 230, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/6qmVIse.jpg"); /* jacy_headshot.jpg */
       	min-height: 200px;
       }
-      .home-sub-box3 {
+      #home-row2-box2 {
+        position: absolute;
+        left: 1200px;
+        
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      #home-row3-box1 {
+        position: absolute;
+        right: 1200px;
+        
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      #home-row3-box1 {
       	padding-top: 80px;
-      	background-image: linear-gradient(rgba(0, 233, 245, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/1xuPNvY.jpg"); /* jacy_torso */
+      	background-image: linear-gradient(rgba(4, 0, 230, 0.3), rgba(0, 0, 0, 0.8)), url("http://i.imgur.com/6qmVIse.jpg"); /* jacy_headshot.jpg */
       	min-height: 200px;
-      }
-      .home-sub-box1:hover .home-sub-link-banner {
-      	color: black;
-        background-color: #f3f3f3;
-      }
-      .home-sub-box2:hover .home-sub-link-banner {
-      	color: black;
-        background-color: #f3f3f3;
-      }
-      .home-sub-box3:hover .home-sub-link-banner{
-      	color: black;
-        background-color: #f3f3f3;
-      }
-      
-      .home-sub-link-banner {
-      	-o-transition:.5s;
-        	-ms-transition:.5s;
-        	-moz-transition:.5s;
-        	-webkit-transition:.5s;
-        	/* ...and now for the proper property */
-        	transition:.5s;
-        	
-      	color: #f3f3f3;
-          padding: 10px;
-          background-color: transparent;
-          height: 55px;
-      }
-      
-      .home-vid-box1 {
-      	border-radius: 3px;
-      	position: relative;
-      	opacity: 0.90;
-      	background-position: center;
-      	background-repeat: no-repeat;
-      	background-size: cover;
-      	background-image: linear-gradient(rgba(255, 0, 0, 0.3), transparent), url("http://i.imgur.com/fpvuHJJ.png");
-      	min-height: 400px;
-      	min-width: 100%;
       }
       
       .contact-bgimg-1 {
@@ -208,24 +248,24 @@
       }
       .footer-social-buttons {
       	width: 51%;
-          margin: 5px auto 0 auto;
+        margin: 5px auto 0 auto;
       }
       .footer-social-buttons .btn {
       	-o-transition:.5s;
-        	-ms-transition:.5s;
-        	-moz-transition:.5s;
-        	-webkit-transition:.5s;
-        	/* ...and now for the proper property */
-        	transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition:.5s;
+      	/* ...and now for the proper property */
+      	transition:.5s;
         	
-          margin: au;
+        margin: au;
       }
       .footer-social-buttons .btn:hover {
-      	background-color: transparent;
+      	background-color: gray;
       	border-color: #fff8f7;
       }
       .footer-social-buttons .btn a {
-      	color: #fff8f7;
+      	color: black;
       	font-size: 40px;
       }
       
@@ -304,25 +344,5 @@
       	}
       }
     </style>
-    <title>The Jacy Method</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelement-and-player.min.js"></script>
-	  <script src="https://use.fontawesome.com/e17a64f862.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   </body>
 </html>
