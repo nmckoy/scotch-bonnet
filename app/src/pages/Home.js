@@ -34,7 +34,7 @@ const arrow_down_row_style = {
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
 
 const text_content_sub = {
-  minHeight: '500px',
+  minHeight: '400px',
   color: 'rgb(35, 35, 35)',
   backgroundColor: 'white',
   textAlign: 'center',
@@ -72,8 +72,22 @@ class Home extends Component {
     }
   }
   
-  moveScreenDown() {
-    scroll.scrollTo(680)
+  componentDidMount() {
+    const script = document.createElement("script");
+
+    const magnific_code = `
+      $('#play-vid')
+        .magnificPopup({
+            items: [{
+              src: 'vimeo.com/211186589'
+            }],
+            type:'iframe'
+          });`;
+        
+    script.type = 'text/javascript';
+    script.text = magnific_code;
+
+    document.body.appendChild(script);
   }
   
   render() {
@@ -83,12 +97,12 @@ class Home extends Component {
         
         <div className="home-bgimg-1">
           <div style={ video_overlay_style }>
-            <video style={ background_video_style } height='auto' id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
-              <source type="video/mp4" src="/assets/jacy_in_action2.mp4" />
+            <video style={ background_video_style } id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
+              <source type="video/mp4" src="/assets/jacy_in_action4.mp4" ></source>
             </video>
             <Grid>
               <Row style={arrow_down_row_style}>
-                <Col xs><i onClick={this.moveScreenDown} className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
+                <Col xs><i onClick={ () => {scroll.scrollTo(680)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
               </Row>
             </Grid>
           </div>
@@ -140,9 +154,16 @@ class Home extends Component {
         
         <div style={ text_content_sub }>
           <Grid>
-            <Row className='home-rows'> {/* Row 4 */}
-              <Col xs={12} mdOffset={2} md={5} className='home-row-box-wrapper'>
-                <div id='home-row4-box1' className='home-box'>
+            <Row className=''> {/* Row 4 */}
+              <Col xs={12} md={6} className='home-row-box-wrapper'>
+                <div id='play-vid' className="about-content-img1" >
+                  <div className="col-md-4">
+                    <i className="fa fa-play-circle" aria-hidden="true"></i>
+                  </div>
+                  <div className="col-md-4">
+                  </div>
+                  <div className="col-md-4">
+                  </div>
                 </div>
               </Col>
               <Col xs={12} md={5} className='home-row-box-wrapper'>
