@@ -88,10 +88,26 @@
       	background-repeat: no-repeat;
       	background-size: cover;
       }
+      @media (max-width: 991px) {
+        #jacy-media-player {
+          display: none;
+        }
+        .home-bgimg-1 {
+        	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/13DHFrN.jpg");
+        	/*background-image: url("/assets/jacy_murica.jpg");*/
+        	min-height: 100vh;
+        }
+      }
       .home-bgimg-1 {
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/13DHFrN.jpg"); /* jacy_murica */
+      	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/13DHFrN.jpg");*/
       	/*background-image: url("/assets/jacy_murica.jpg");*/
-      	min-height: 680px;
+      	/*min-height: 680px;*/
+      	min-height: 100vh;
+      	color: white;
+      	font-size: 100px;
+      }
+      .home-move-down-arrow:hover {
+        cursor: pointer;
       }
       .home-bgimg-2 {
       	background-image: url("http://i.imgur.com/4YzgE9x.jpg"); /* jacy_explaining.jpg */
@@ -119,7 +135,7 @@
       }
       
       .home-rows {
-        margin-top: 100px;
+        margin-top: 80px;
       }
       .home-row-box-wrapper {
         position: relative;
@@ -255,10 +271,6 @@
       	background-repeat: no-repeat;
       	background-size: contain;
       	background-image: url("http://i.imgur.com/aJrAZCn.png"); /* jacy_black_transparent_trimmed */
-      }
-      .footer-social-buttons {
-      	width: 51%;
-        margin: 5px auto 0 auto;
       }
       .footer-social-buttons .btn {
       	-o-transition:.5s;

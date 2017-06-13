@@ -8,6 +8,8 @@ const text_content_lead_header = {textAlign: 'center'}
 const text_content_sub = { color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
 const text_content_sub_pos = { position:'relative' }
 
+// http://unitegallery.net/
+// use this for gallery
 class Portfolio extends Component {
    render() {
     return  <div>

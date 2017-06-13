@@ -34,16 +34,16 @@ class Footer extends Component {
                     </div>
                   </Col>
                 </Row>
-                  <Col xsOffset={6} xs className='footer-social-buttons'>
-                    <Row>
-                      <Col xsOffset={4} xs>
+                <Row className='footer-social-buttons'>
+                  <Col xs={12}>
+                    <Row center="xs">
+                      <Col xs={6}>
                         <Button ><a href="https://www.facebook.com/jrhamz"><i className="fa fa-facebook" aria-hidden="true"></i></a></Button>
                         <Button ><a href="mailto:j@thejacymethod.com"><i className="fa fa-envelope" aria-hidden="true"></i></a></Button>
                         <Button ><a href="https://www.instagram.com/jacycunningham/"><i className="fa fa-instagram" aria-hidden="true"></i></a></Button>
                       </Col>
                     </Row>
                   </Col>
-                <Row>
                 </Row>
               </Grid>
           	</div>
