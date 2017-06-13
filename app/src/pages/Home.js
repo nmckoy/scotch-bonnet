@@ -19,16 +19,19 @@ const text_content_lead = {
 }
 const text_content_lead_header = {textAlign: 'center'}
 const video_overlay_style = {
+  width: '100%',
+  paddingBottom: '56.25%',
   background: 'rgba(0, 0, 0, 0.29)',
-  minHeight: '100vh'
+  position: 'relative'
 }
 const background_video_style = {
-  position: 'absolute',
+  width: '100%',
   zIndex: '-1'
 }
-const arrow_down_row_style = {
-  marginTop: '500px',
-  marginLeft: '46%'
+const arrow_down_grid_style = {
+  zIndex: '2',
+  position: 'absolute',
+  width: '100%'
 }
 
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
@@ -94,18 +97,17 @@ class Home extends Component {
     return(
       <div>
         <EventListener target="window" onScroll={ this.showBoxes }/>
-        
-        <div className="home-bgimg-1">
-          <div style={ video_overlay_style }>
-            <video style={ background_video_style } id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
-              <source type="video/mp4" src="/assets/jacy_in_action4.mp4" ></source>
-            </video>
-            <Grid>
-              <Row style={arrow_down_row_style}>
-                <Col xs><i onClick={ () => {scroll.scrollTo(680)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
-              </Row>
-            </Grid>
+        <div>
+          <Grid style={arrow_down_grid_style}>
+            <Row className='arrow_down_row'>
+              <Col xs><i onClick={ () => {scroll.scrollTo(680)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
+            </Row>
+          </Grid>
+          <div className="home-bgimg-1">
           </div>
+          <video style={ background_video_style } id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
+            <source type="video/mp4" src="/assets/jacy_in_action4.mp4" ></source>
+          </video>
         </div>
           
         <div style={ text_content_lead}>
