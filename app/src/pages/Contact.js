@@ -1,15 +1,26 @@
 import React, { Component } from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Footer from '../components/Footer'
 import { removeActiveHome } from '../Utils'
 // https://facebook.github.io/react/docs/dom-elements.html#style
-const text_content_lead = {boxShadow: 'inset 0px 1px 20px 6px rgba(0,0,0,.22)', color: 'rgb(58, 58, 58)', background: 'linear-gradient(#e0e0e0, white)', textAlign: 'center', padding: '75px 50px', textAlign: 'justify'}
-const text_content_lead_header = {textAlign: 'center'}
+const text_content_lead = {
+  minHeight: '500px',
+  color: 'rgb(35, 35, 35)',
+  backgroundColor: 'white',
+  textAlign: 'center',
+  padding: '25px',
+  textAlign: 'justify'
+}
+const text_content_lead_header = {
+    borderBottom: '1px solid #b5b5b5'
+}
 
-const text_content_sub = { color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
-const text_content_sub_pos = { position:'relative' }
-
-const page_paragraph_style = { fontSize: '16px' }
+const content_sub_style = {
+  paddingTop: '10px',
+  fontSize: '20px',
+  textAlign: 'center'
+}
 
 class Contact extends Component {
   componentDidMount() {
@@ -27,11 +38,19 @@ class Contact extends Component {
           		</div>
 
           		<div style={ text_content_lead }>
-          		  <div className='container'>
-            			<h3 style={ text_content_lead_header }>Contact</h3>
-            			<p style={ page_paragraph_style }>For all business inquiries, please contact <a href='mailto:management@thejacymethod.com'>management@thejacymethod.com</a></p>
-          		  </div>
-          		</div>
+        		    <Grid>
+        		        <Row >
+        		            <Col xs>
+        		                <h3 style= { text_content_lead_header }>Contact Us</h3>
+        		            </Col>
+        		        </Row>
+        		        <Row style={ content_sub_style }>
+        		          <Col xs>
+        		            <p>Interested in working with Jacy? For all business inquiries, please contact <a href='mailto:management@thejacymethod.com'>management@thejacymethod.com</a> or call (202) 417-8303.</p>
+        		          </Col>
+        		        </Row>
+        		    </Grid>
+        		  </div>
           		
           	</div>
     }
