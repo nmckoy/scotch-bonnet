@@ -53,7 +53,7 @@ class AppNav extends Component {
                                 <NavItem eventKey={1}>HOME</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/about">
-                                <NavItem eventKey={2}>ABOUT US</NavItem>
+                                <NavItem eventKey={2}>ABOUT</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/portfolio">
                                 <NavItem eventKey={3}>PORTFOLIO</NavItem>

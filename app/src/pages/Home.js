@@ -100,13 +100,13 @@ class Home extends Component {
         <div>
           <Grid style={arrow_down_grid_style}>
             <Row className='arrow_down_row'>
-              <Col xs><i onClick={ () => {scroll.scrollTo(680)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
+              <Col xs><i onClick={ () => {scroll.scrollTo(720)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
             </Row>
           </Grid>
           <div className="home-bgimg-1">
           </div>
           <video style={ background_video_style } id="jacy-media-player" preload="auto" loop="true" autoPlay="true">
-            <source type="video/mp4" src="/assets/jacy_in_action4.mp4" ></source>
+            <source type="video/mp4" src="/assets/jacy_in_action5.mp4" ></source>
           </video>
         </div>
           
