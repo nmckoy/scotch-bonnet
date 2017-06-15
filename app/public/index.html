@@ -98,11 +98,18 @@
       	display: none;
       	z-index: -1;
       }
-      .arrow_down_row {
-        font-size: 100px;
+      .arrow-down-row {
+        font-size: 80px;
         color: white;
-        margin-top: 42%;
+        margin-top: 45%;
         margin-left: 48%;
+      }
+      .home-move-down-arrow {
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition: all .5s ease;
+        transition: all .5s ease;
       }
       .home-move-down-arrow:hover {
         cursor: pointer;
@@ -363,6 +370,55 @@
       .portfolio-vid-3:hover {
         background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/7qxTpq9.gif");
       }
+      #portfolio-nike-img,
+      #portfolio-jaybird-img,
+      #portfolio-lokai-img,
+      #portfolio-qoya-img,
+      #portfolio-mikeposner-img,
+      #portfolio-summit-img,
+      #portfolio-trapjumpin-img {
+        position: relative;
+      	opacity: 0.90;
+      	background-attachment: scroll;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: contain;
+      	width: 100%;
+      	min-height: 150px;
+      	cursor: pointer;
+      }
+      #portfolio-nike-img:hover,
+      #portfolio-jaybird-img:hover,
+      #portfolio-lokai-img:hover,
+      #portfolio-qoya-img:hover,
+      #portfolio-mikeposner-img:hover,
+      #portfolio-summit-img:hover,
+      #portfolio-trapjumpin-img:hover {
+      	opacity: 0.20;
+      }
+      #portfolio-nike-img {
+        background-image: url("http://i.imgur.com/7Je1Ws4.png");
+      }
+      #portfolio-jaybird-img {
+        background-size: cover;
+      	background-image: url("http://i.imgur.com/NOpeZG7.jpg");
+      }
+      #portfolio-lokai-img {
+      	background-image: url("http://i.imgur.com/wuyraxG.jpg");
+      }
+      #portfolio-qoya-img {
+        background-image: url("http://i.imgur.com/8W2l4Bl.png");
+      }
+      #portfolio-mikeposner-img {
+        background-image: url("http://i.imgur.com/N6ux6I1.png");
+      }
+      #portfolio-summit-img {
+        background-image: url("http://i.imgur.com/XP3X85J.png");
+      }
+      #portfolio-trapjumpin-img {
+        background-size: cover;
+        background-image: url("http://i.imgur.com/U1FxFUj.png");
+      }
       .footer-logo {
       	min-height: 150px;
       	background-position: center;
@@ -502,7 +558,7 @@
         .home-bgimg-1 {
         	display: block;
         }
-        .arrow_down_row {
+        .arrow-down-row {
           /*margin-top: 80%;*/
           display: none;
         }

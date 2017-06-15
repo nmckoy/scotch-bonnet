@@ -54,6 +54,12 @@ class Home extends Component {
   showBoxes() {
     let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
     // console.log(scrollTop)
+    if (scrollTop > 200) {
+      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: transparent; cursor: default;')
+    }
+    if (scrollTop < 200) {
+      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: white; cursor: pointer;')
+    }
     if (scrollTop > 400) {
       document.getElementById('home-row1-box1').setAttribute('style', 'right: 0px; position: relative;')
     }
@@ -98,14 +104,20 @@ class Home extends Component {
     document.body.appendChild(script);
   }
   
+  scrolDown() {
+    let elem_top = document.getElementById('home-rows').scrollHeight
+    console.log(elem_top)
+    scroll.scrollTo(elem_top)
+  }
+  
   render() {
     return(
       <div>
         <EventListener target="window" onScroll={ this.showBoxes }/>
         <div>
           <Grid style={arrow_down_grid_style}>
-            <Row className='arrow_down_row'>
-              <Col xs><i onClick={ () => {scroll.scrollTo(720)} } className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
+            <Row className='arrow-down-row'>
+              <Col xs><i onClick={ this.scrolDown } id='home-move-down-arrow' className="fa fa-angle-down home-move-down-arrow" aria-hidden="true"></i></Col>
             </Row>
           </Grid>
           <div className="home-bgimg-1">
@@ -118,7 +130,7 @@ class Home extends Component {
         <div style={ text_content_lead}>
             <div className='col-md-12'>
               <Grid >
-                <Row className='home-rows'> {/* Row 1 */}
+                <Row id='home-rows' className='home-rows'> {/* Row 1 */}
                   <Col xs={12} md={6} className='home-row-box-wrapper'>
                     <div id='home-row1-box1' className='home-box'>
                     </div>
