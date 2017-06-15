@@ -11,11 +11,10 @@ import { removeActiveHome } from '../Utils'
 
 // https://facebook.github.io/react/docs/dom-elements.html#style
 const text_content_lead = {
-  minHeight: '1025px',
+  minHeight: '925px',
   color: 'rgb(35, 35, 35)',
   backgroundColor: 'rgb(243, 243, 243)',
   textAlign: 'center',
-  padding: '25px',
   textAlign: 'justify'
 }
 const text_content_lead_header = {textAlign: 'center'}
@@ -128,7 +127,6 @@ class Home extends Component {
         </div>
           
         <div style={ text_content_lead}>
-            <div className='col-md-12'>
               <Grid >
                 <Row id='home-rows' className='home-rows'> {/* Row 1 */}
                   <Col xs={12} md={6} className='home-row-box-wrapper'>
@@ -168,14 +166,13 @@ class Home extends Component {
                   <Col md={2}></Col>
                 </Row>
               </Grid>
-            </div>
         </div>
         
         <div style={ text_content_sub }>
           <Grid>
             <Row className=''> {/* Row 4 */}
               <Col xs={12} md={6} className='home-row-box-wrapper'>
-                <div id='play-vid' className="about-content-img1" >
+                <div id='play-vid' className="home-vid-1" >
                   <div className="col-md-4">
                     <i className="fa fa-play-circle" aria-hidden="true"></i>
                   </div>

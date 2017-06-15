@@ -5,6 +5,7 @@ import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import EventListener, { withOptions } from 'react-event-listener'
+/* global $ */ // i fucking need jquery here. such a shame
 
 import { removeActiveHome } from '../Utils'
 
@@ -24,19 +25,23 @@ class AppNav extends Component {
     
     resizeNav(event) {
         let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
+        let main_nav_style_props = 'min-height: 35px;'
+        
         if (scrollTop > 80) {
-            document.getElementById('main-nav').setAttribute('style', 'min-height: 35px; background-color: rgba(0, 0, 0, 1)')
+                main_nav_style_props = main_nav_style_props + 'background-color: rgba(0, 0, 0, 1)'
+            document.getElementById('main-nav').setAttribute('style', main_nav_style_props)
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 7px;')
         } else {
-            document.getElementById('main-nav').setAttribute('style', 'min-height: 70px; background-color: rgba(34, 34, 34, 0.00)')
+            if (window.width > 767) {
+                main_nav_style_props = main_nav_style_props + 'background-color: rgba(34, 34, 34, 0.00)'
+            }
+            document.getElementById('main-nav').setAttribute('style', main_nav_style_props)
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 22px;')
         }
     }
     
-    componentDidMount() {
-        // hack to clean up the active class on home nav link
-        // for some reason it is always active when link_to = /
-        removeActiveHome()
+    collapseNav() {
+        $('.navbar-collapse').collapse('hide') // :/
     }
 
     render() {
@@ -44,7 +49,7 @@ class AppNav extends Component {
             <div>
                 <EventListener target="window" onScroll={ this.resizeNav }/>
             
-                <Navbar id="main-nav" style={ nav_container_style } inverse fixedTop>
+                <Navbar id="main-nav" inverse fixedTop>
                     <div id="main-nav-content" style={ nav_content_style } className="container-fluid">
                         <Navbar.Header>
                           <Navbar.Brand>
@@ -55,22 +60,22 @@ class AppNav extends Component {
                           </Navbar.Brand>
                           <Navbar.Toggle />
                         </Navbar.Header>
-                        <Navbar.Collapse>
+                        <Navbar.Collapse id='nav-content' data-toggle="collapse" data-target=".nav-collapse.show">
                           <Nav pullRight>
                             <LinkContainer to="/">
-                                <NavItem id='home-link' eventKey={1}>HOME</NavItem>
+                                <NavItem id='home-link' onClick={ this.collapseNav } eventKey={1}>HOME</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/about">
-                                <NavItem onClick={this.removeActiveHome} eventKey={2}>ABOUT</NavItem>
+                                <NavItem onClick={ this.collapseNav } eventKey={2}>ABOUT</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/portfolio">
-                                <NavItem eventKey={3}>PORTFOLIO</NavItem>
+                                <NavItem onClick={ this.collapseNav } eventKey={3}>PORTFOLIO</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/events">
-                                <NavItem eventKey={3}>EVENTS</NavItem>
+                                <NavItem onClick={ this.collapseNav } eventKey={3}>EVENTS</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/contact">
-                                <NavItem eventKey={3}>CONTACT US</NavItem>
+                                <NavItem onClick={ this.collapseNav } eventKey={3}>CONTACT US</NavItem>
                             </LinkContainer>
                           </Nav>
                         </Navbar.Collapse>
