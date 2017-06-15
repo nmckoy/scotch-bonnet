@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, browserHistory, hashHistory } from 'react-router'
 
 import App from './App';
 import Home from './pages/Home'
@@ -13,7 +13,7 @@ import Events from './pages/Events'
 
 render(
   <div>
-    <Router onUpdate={() => window.scrollTo(0, 0)} history={ hashHistory }>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={ browserHistory }>
       <Route path="/" component={ App }>
         <Route path="/about" component={ About }/>
         <Route path="/contact" component={ Contact }/>

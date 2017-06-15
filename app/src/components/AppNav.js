@@ -6,6 +6,8 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import EventListener, { withOptions } from 'react-event-listener'
 
+import { removeActiveHome } from '../Utils'
+
 const nav_container_style = { 
     minHeight: '100px',
     backgroundColor: 'rgba(34, 34, 34, 0.00)',
@@ -30,6 +32,12 @@ class AppNav extends Component {
             document.getElementById('main-nav-content').setAttribute('style', 'padding: 22px;')
         }
     }
+    
+    componentDidMount() {
+        // hack to clean up the active class on home nav link
+        // for some reason it is always active when link_to = /
+        removeActiveHome()
+    }
 
     render() {
         return (
@@ -50,10 +58,10 @@ class AppNav extends Component {
                         <Navbar.Collapse>
                           <Nav pullRight>
                             <LinkContainer to="/">
-                                <NavItem eventKey={1}>HOME</NavItem>
+                                <NavItem id='home-link' eventKey={1}>HOME</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/about">
-                                <NavItem eventKey={2}>ABOUT</NavItem>
+                                <NavItem onClick={this.removeActiveHome} eventKey={2}>ABOUT</NavItem>
                             </LinkContainer>
                             <LinkContainer to="/portfolio">
                                 <NavItem eventKey={3}>PORTFOLIO</NavItem>

@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import Gallery from 'react-grid-gallery'
 
 import Footer from '../components/Footer'
+import { removeActiveHome } from '../Utils'
 // import Gallery from '../components/Gallery'
 
 const text_content_lead = {
@@ -16,11 +17,9 @@ const text_content_lead = {
 const text_content_lead_header = {
     borderBottom: '1px solid #b5b5b5'
 }
-
-const text_content_sub = { color: 'rgb(35, 35, 35)', backgroundColor: 'rgb(202, 228, 255)', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }
-const text_content_sub_pos = { position:'relative' }
-
-const gallery_row_style = {}
+const portfolio_vid_row_style = {
+    padding: '7px 7px 0px 7px'
+}
 
 const images =
 [{
@@ -85,6 +84,10 @@ const images =
 // use this for gallery
 class Portfolio extends Component {
     componentDidMount() {
+        // hack to clean up the active class on home nav link
+        // for some reason it is always active when link_to = /
+        removeActiveHome()
+        
         setTimeout(() => { 
             let tiles = document.getElementsByClassName('tile')
             for (let i = tiles.length-1; i >= 0; i--) {
@@ -94,10 +97,24 @@ class Portfolio extends Component {
         
         const script = document.createElement("script");
         const magnific_code = `
-          $('#play-vid')
+          $('#play-vid1')
             .magnificPopup({
                 items: [{
                   src: 'https://www.youtube.com/watch?v=TVlD3Elr79c'
+                }],
+                type:'iframe'
+              });
+          $('#play-vid2')
+            .magnificPopup({
+                items: [{
+                  src: 'https://vimeo.com/157372560'
+                }],
+                type:'iframe'
+              });
+          $('#play-vid3')
+            .magnificPopup({
+                items: [{
+                  src: 'https://www.dropbox.com/s/hjd3ksz5tshdhlb/Nike%20-%20Unlimited%20You.mp4?raw=1'
                 }],
                 type:'iframe'
               });`;
@@ -106,10 +123,6 @@ class Portfolio extends Component {
         script.text = magnific_code;
     
         document.body.appendChild(script);
-    }
-    
-    removeGalleryFunctions() {
-        console.log('clicked')
     }
     
     render() {
@@ -128,14 +141,34 @@ class Portfolio extends Component {
               		                <h3 style= { text_content_lead_header }>Portfolio</h3>
               		            </Col>
               		        </Row>
-              		        <Row style={gallery_row_style}>
+              		        <Row >
               		            <Col xs>
               		                <Gallery images={images} onClick={ this.removeGalleryFunctions }>
               		                </Gallery>
               		            </Col>
               		        </Row>
-              		        <Row>
-              		            <Col xs id='play-vid' className='portfolio-vid-1'>
+              		        <Row style={portfolio_vid_row_style}>
+              		            <Col xs id='play-vid1' className='portfolio-vid-1'>
+              		                <div className="col-md-4">
+                                        <i className="fa fa-play-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="col-md-4">
+                                    </div>
+                                    <div className="col-md-4">
+                                    </div>
+              		            </Col>
+              		        </Row>
+              		        <Row style={portfolio_vid_row_style}>
+              		            <Col xs id='play-vid2' className='portfolio-vid-2'>
+              		                <div className="col-md-4">
+                                        <i className="fa fa-play-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="col-md-4">
+                                    </div>
+                                    <div className="col-md-4">
+                                    </div>
+              		            </Col>
+              		            <Col xs id='play-vid3' className='portfolio-vid-3'>
               		                <div className="col-md-4">
                                         <i className="fa fa-play-circle" aria-hidden="true"></i>
                                     </div>

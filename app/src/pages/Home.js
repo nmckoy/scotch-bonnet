@@ -7,6 +7,7 @@ import Scroll from 'react-scroll'
 const scroll = Scroll.animateScroll
 
 import Footer from '../components/Footer'
+import { removeActiveHome } from '../Utils'
 
 // https://facebook.github.io/react/docs/dom-elements.html#style
 const text_content_lead = {
@@ -76,6 +77,10 @@ class Home extends Component {
   }
   
   componentDidMount() {
+    // hack to clean up the active class on home nav link
+    // for some reason it is always active when link_to = /
+    removeActiveHome()
+    
     const script = document.createElement("script");
 
     const magnific_code = `

@@ -34,6 +34,7 @@
       body {
         margin: 0;
         padding: 0;
+        height: 100%;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -55,6 +56,9 @@
           color: #fff;
           background-color: transparent;
       }
+      .navbar-inverse .navbar-nav>.active>a {
+        border-bottom: 1px solid white;
+      }
       
       .navbar-inverse .navbar-nav>li>a {
       	color: #fff;
@@ -62,6 +66,9 @@
       	font-family: impact;
       	letter-spacing: 1.25px;
         letter-spacing: 0;
+      }
+      .navbar-inverse .navbar-nav>li>a:hover {
+        border-bottom: 1px solid white;
       }
       .navbar-inverse {
       	border-color: transparent;
@@ -289,12 +296,79 @@
       .portfolio-vid-1:hover {
         background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/6qHylUA.png"); /* jacy_nike_training_club1 */
       }
+      .portfolio-vid-2 {
+      	position: relative;
+      	opacity: 0.90;
+      	background-attachment: scroll;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	background-image: url("http://i.imgur.com/ZRmWi7y.gif");
+      	/*background-image: url("/assets/jacy_murica.jpg");*/
+      	/*min-height: 680px;*/
+      	/*min-height: 100vh;*/
+      	padding-right: 100px;
+      	width: 100%;
+      	min-height: 400px;
+      	cursor: pointer;
+      }
+      .portfolio-vid-2 .fa {
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition:.5s;
+      	/* ...and now for the proper property */
+      	transition:.5s;
+        	
+        color: white;
+        font-size: 70px;
+        margin-top: 10%;
+      }
+      .portfolio-vid-2:hover .fa {
+        color: black;
+      }
+      .portfolio-vid-2:hover {
+        background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/ZRmWi7y.gif");
+      }
+      .portfolio-vid-3 {
+      	position: relative;
+      	opacity: 0.90;
+      	background-attachment: scroll;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	background-image: url("http://i.imgur.com/7qxTpq9.gif");
+      	/*background-image: url("/assets/jacy_murica.jpg");*/
+      	/*min-height: 680px;*/
+      	/*min-height: 100vh;*/
+      	width: 100%;
+      	min-height: 400px;
+      	cursor: pointer;
+      }
+      .portfolio-vid-3 .fa {
+        -o-transition:.5s;
+      	-ms-transition:.5s;
+      	-moz-transition:.5s;
+      	-webkit-transition:.5s;
+      	/* ...and now for the proper property */
+      	transition:.5s;
+        	
+        color: white;
+        font-size: 70px;
+        margin-top: 10%;
+      }
+      .portfolio-vid-3:hover .fa {
+        color: black;
+      }
+      .portfolio-vid-3:hover {
+        background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/7qxTpq9.gif");
+      }
       .footer-logo {
       	min-height: 150px;
       	background-position: center;
       	background-repeat: no-repeat;
       	background-size: contain;
-      	background-image: url("http://i.imgur.com/aJrAZCn.png"); /* jacy_black_transparent_trimmed */
+      	background-image: url("http://i.imgur.com/aJrAZCn.png");
       }
       .footer-social-buttons .btn {
       	-o-transition:.5s;
@@ -399,7 +473,17 @@
       
       /* Turn off parallax scrolling for tablets and phones */
       @media only screen and (max-device-width: 1024px) {
-      	.home-bgimg-1, .home-bgimg-2, .home-bgimg-3, .home-bgimg-4, .contact-bgimg-1 {
+      	.home-bgimg-1,
+      	.home-bgimg-2,
+      	.home-bgimg-3,
+      	.home-bgimg-4,
+      	.contact-bgimg-1,
+      	.portfolio-bgimg-1,
+      	.events-bgimg-1,
+      	.about-bgimg-1,
+      	.portfolio-vid-1,
+      	.portfolio-vid-2,
+      	.portfolio-vid-3{
       		background-attachment: scroll;
       	}
       }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Footer from '../components/Footer'
+import { removeActiveHome } from '../Utils'
 // this is how you decalre global elements in React 
 // so it doesnt complain about you not importing something
 // MediaElement is from some cdn library
@@ -17,6 +18,10 @@ const page_paragraph_style = { fontSize: '16px' }
 	        
 class About extends Component {
   componentDidMount() {
+    // hack to clean up the active class on home nav link
+    // for some reason it is always active when link_to = /
+    removeActiveHome()
+    
     const script = document.createElement("script");
 
     const magnific_code = `
