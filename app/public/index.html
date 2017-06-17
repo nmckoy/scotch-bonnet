@@ -26,8 +26,9 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelementplayer.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.1.2/mediaelement-and-player.min.js"></script>
-	  <script src="https://use.fontawesome.com/e17a64f862.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	  <script type="text/javascript" src="https://use.fontawesome.com/e17a64f862.js"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
 	  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <style>
@@ -89,7 +90,7 @@
       	background-size: cover;
       }
       .home-bgimg-1 {
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/QCjArCS.jpg");
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("http://i.imgur.com/Jc1cbpe.jpg");
       	/*background-image: url("/assets/jacy_murica.jpg");*/
       	/*min-height: 680px;*/
       	/*min-height: 100vh;*/
@@ -140,11 +141,15 @@
       }
       
       .home-rows {
-        margin-top: 80px;
+        margin-top: 40px;
       }
       .home-row-box-wrapper {
         position: relative;
       }
+      .home-row-box-wrapper-content {
+        color: #f2f0ee;
+      }
+      
       #home-row1-box1 {
         position: absolute;
         right: 1200px;
@@ -157,7 +162,8 @@
         
         padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("http://i.imgur.com/fpvuHJJ.png"); /* jacy_about_page_banner.png */
+      	background-image: linear-gradient(rgba(255, 130, 53, 0.3), rgba(48, 232, 200, 0.3)), url("http://i.imgur.com/fpvuHJJ.png");
+      	box-shadow: 13px 15px 20px 0px #888888;
       	min-height: 200px;
       }
       #home-row1-box2 {
@@ -182,7 +188,8 @@
         
       	padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(4, 0, 230, 0.0), rgba(0, 0, 0, 0.0)), url("http://i.imgur.com/6qmVIse.jpg"); /* jacy_headshot.jpg */
+      	background-image: linear-gradient(rgba(38, 87, 235, 0.3), rgba(222, 97, 97, 0.3)), url("http://i.imgur.com/PzNYmGy.jpg");
+      	box-shadow: 13px 15px 20px 0px #888888;
       	min-height: 200px;
       }
       #home-row2-box2 {
@@ -207,7 +214,8 @@
         
       	padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(4, 0, 230, 0.0), rgba(0, 0, 0, 0.0)), url("http://i.imgur.com/GcoHiEQ.jpg"); /* jacy_headshot.jpg */
+      	background-image: linear-gradient(rgba(249, 212, 35, 0.3), rgba(255, 78, 80, 0.3)), url("http://i.imgur.com/GcoHiEQ.jpg"); /* jacy_headshot.jpg */
+      	box-shadow: 13px 15px 20px 0px #888888;
       	min-height: 200px;
       }
       #home-row3-box2 {
@@ -222,7 +230,7 @@
       }
       .home-vid-1 {
       	
-        background-image: url("http://i.imgur.com/ij29ZzZ.jpg"); /* jacy_nike_training_club1 */
+        background-image: url("http://i.imgur.com/ij29ZzZ.jpg");
       	min-height: 350px;
       	background-position: center;
       	background-size: cover;
@@ -256,18 +264,28 @@
       }
       
       .about-bgimg-1 {
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png");
+      	min-height: 350px;
+      	background-position: center;
+      }
+      .about-content-img-1 {
+        position: relative;
+      	background-attachment: scroll;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/K64NDEu.jpg");
       	min-height: 350px;
       	background-position: center;
       }
       
       .events-bgimg-1 {
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png");
       	min-height: 350px;
       	background-position: center;
       }
       .portfolio-bgimg-1 {
-      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png"); /* jacy_contact_page_banner */
+      	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("http://i.imgur.com/9yYesq9.png");
       	min-height: 350px;
       	background-position: center;
       }
@@ -600,6 +618,27 @@
         .container {
           width: 1050px;
         }
+      }
+      .typed-cursor{
+      	opacity: 1;
+      	-webkit-animation: blink 0.7s infinite;
+      	-moz-animation: blink 0.7s infinite;
+      	animation: blink 0.7s infinite;
+      }
+      @keyframes blink{
+      	0% { opacity:1; }
+      	50% { opacity:0; }
+      	100% { opacity:1; }
+      }
+      @-webkit-keyframes blink{
+      	0% { opacity:1; }
+      	50% { opacity:0; }
+      	100% { opacity:1; }
+      }
+      @-moz-keyframes blink{
+      	0% { opacity:1; }
+      	50% { opacity:0; }
+      	100% { opacity:1; }
       }
     </style>
   </body>

@@ -7,7 +7,7 @@ import { removeActiveHome, jacy_images, client_images, partner_images } from '..
 // import Gallery from '../components/Gallery'
 
 const text_content_lead = {
-  minHeight: '500px',
+  minHeight: '550px',
   color: 'rgb(35, 35, 35)',
   backgroundColor: 'white',
   textAlign: 'center',
@@ -17,16 +17,16 @@ const text_content_lead = {
 const text_content_lead_header = {
     borderBottom: '1px solid #b5b5b5'
 }
-const portfolio_row_style = {
+const row_style = {
     padding: '7px 7px 0px 7px'
 }
-const portfolio_title_row_style = {
+const title_row_style = {
     padding: '7px 7px 6px 7px'
 }
-const portfolio_title_col_style = {
-    background: 'black'
+const title_col_style = {
+    background: '#1F1C2C'
 }
-const portfolio_title_content_style = {
+const title_content_style = {
     paddingBottom: '7px',
     paddingLeft: '7px',
     color: 'white',
@@ -68,7 +68,7 @@ class Portfolio extends Component {
           $('#play-vid3')
             .magnificPopup({
                 items: [{
-                  src: 'https://www.dropbox.com/s/hjd3ksz5tshdhlb/Nike%20-%20Unlimited%20You.mp4?raw=1'
+                  src: 'https://vimeo.com/221906910'
                 }],
                 type:'iframe'
               });`;
@@ -109,9 +109,9 @@ class Portfolio extends Component {
               
               		<div style={ text_content_lead }>
               		    <Grid>
-              		        <Row >
-              		            <Col xs>
-              		                <h3 style= { text_content_lead_header }>Portfolio</h3>
+              		        <Row style={ row_style }>
+              		            <Col xs style={ title_col_style }>
+              		                <h3 style= { title_content_style }>Portfolio</h3>
               		            </Col>
               		        </Row>
               		        <Row >
@@ -120,7 +120,7 @@ class Portfolio extends Component {
               		                </Gallery>
               		            </Col>
               		        </Row>
-              		        <Row style={portfolio_row_style}>
+              		        <Row style={row_style}>
               		            <Col xs id='play-vid1' className='portfolio-vid-1'>
               		                <div className="col-md-4">
                                         <i className="fa fa-play-circle" aria-hidden="true"></i>
@@ -131,7 +131,7 @@ class Portfolio extends Component {
                                     </div>
               		            </Col>
               		        </Row>
-              		        <Row style={portfolio_row_style}>
+              		        <Row style={row_style}>
               		            <Col xs id='play-vid2' className='portfolio-vid-2'>
               		                <div className="col-md-4">
                                         <i className="fa fa-play-circle" aria-hidden="true"></i>
@@ -152,12 +152,12 @@ class Portfolio extends Component {
               		            </Col>
               		        </Row>
               		        {/* Client pics */}
-              		        <Row style={ portfolio_title_row_style }>
-              		            <Col xs style={ portfolio_title_col_style }>
-              		                <h3 style={ portfolio_title_content_style }>Clients</h3>
+              		        <Row style={ title_row_style }>
+              		            <Col xs style={ title_col_style }>
+              		                <h3 style={ title_content_style }>Clients</h3>
               		            </Col>
               		        </Row>
-              		        <Row style={portfolio_row_style}>
+              		        <Row style={row_style}>
               		            <Col xs={4} onClick={ () => {this.openWindow('nike')} } id='portfolio-nike-img'>
               		            </Col>
               		            <Col xs={6} onClick={ () => {this.openWindow('jaybird')} } id='portfolio-jaybird-img'>
@@ -174,12 +174,12 @@ class Portfolio extends Component {
               		            </Col>
               		        </Row>
               		        {/* Partner pics */}
-              		        <Row style={ portfolio_title_row_style }>
-              		            <Col xs style={ portfolio_title_col_style }>
-              		                <h3 style={ portfolio_title_content_style }>Partners</h3>
+              		        <Row style={ title_row_style }>
+              		            <Col xs style={ title_col_style }>
+              		                <h3 style={ title_content_style }>Partners</h3>
               		            </Col>
               		        </Row>
-              		        <Row style={portfolio_row_style}>
+              		        <Row style={row_style}>
               		            <Col xs onClick={ () => {this.openWindow('trapjumpin')} } id='portfolio-trapjumpin-img'>
               		            </Col>
               		        </Row>

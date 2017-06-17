@@ -11,9 +11,12 @@ import { removeActiveHome } from '../Utils'
 
 // https://facebook.github.io/react/docs/dom-elements.html#style
 const text_content_lead = {
-  minHeight: '925px',
+  minHeight: '850px',
   color: 'rgb(35, 35, 35)',
-  backgroundColor: 'rgb(243, 243, 243)',
+  background: '#ECE9E6',  /* fallback for old browsers */
+  background: '-webkit-linear-gradient(to right, #FFFFFF, #ECE9E6)',  /* Chrome 10-25, Safari 5.1-6 */
+  background: 'linear-gradient(to right, #FFFFFF, #ECE9E6)', /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   textAlign: 'center',
   textAlign: 'justify'
 }
@@ -39,7 +42,10 @@ const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', col
 const text_content_sub = {
   minHeight: '400px',
   color: 'rgb(35, 35, 35)',
-  backgroundColor: 'white',
+  background: '#2193b0',
+  background: '-webkit-linear-gradient(to right, #6dd5ed, #2193b0)',
+  background: 'linear-gradient(to right, #6dd5ed, #2193b0)',
+
   textAlign: 'center',
   padding: '50px 80px',
   textAlign: 'justify'
@@ -95,7 +101,7 @@ class Home extends Component {
               src: 'vimeo.com/211186589'
             }],
             type:'iframe'
-          });`;
+          });`;7
         
     script.type = 'text/javascript';
     script.text = magnific_code;
@@ -106,7 +112,7 @@ class Home extends Component {
   scrolDown() {
     let elem_top = document.getElementById('home-rows').scrollHeight
     console.log(elem_top)
-    scroll.scrollTo(elem_top)
+    scroll.scrollTo(680)
   }
   
   render() {
@@ -135,8 +141,14 @@ class Home extends Component {
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row1-box2' className='home-box'>
-                      <h2>header1</h2>
-                      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                      <h2>About</h2>
+                      <p>Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
+                        football player and Pro trainer, Jacy has used his skill set to gain entry points into the depth of the
+                        human spirit and help people of all walks of life acknowledge their divine connection thru movement.
+                        For the past 3 years Jacy has served as the in-house Movement Instructor for Summit Powder
+                        Mountain, a start-up based at the foot of Powder Mountain in Eden, Utah. Here he was able to teach
+                        his version of movement to a community full of incredible entrepreneurs and social savants.
+                      </p>
                     </div>
                   </Col>
                 </Row>
@@ -147,8 +159,8 @@ class Home extends Component {
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row2-box2' className='home-box'>
-                      <h2>header2</h2>
-                      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. </p>
+                      <h2>Portfolio</h2>
+                      <p>Check out pictures and videos of the man behind the method, Jacy Cunningham.</p>
                     </div>
                   </Col>
                 </Row>
@@ -159,8 +171,8 @@ class Home extends Component {
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row3-box2' className='home-box'>
-                      <h2>header3</h2>
-                      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
+                      <h2>Events</h2>
+                      <p>Jacy Cunningham may be heading to a city near you to teach The Jacy Method. Stay connected to learn more about upcoming events for your chance to experience The Jacy Method.</p>
                     </div>
                   </Col>
                   <Col md={2}></Col>
@@ -182,10 +194,16 @@ class Home extends Component {
                   </div>
                 </div>
               </Col>
-              <Col xs={12} md={5} className='home-row-box-wrapper'>
+              <Col xs={12} md={5} className='home-row-box-wrapper home-row-box-wrapper-content'>
                 <div id='home-row4-box2' className='home-box'>
-                  <h2>header3</h2>
-                  <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.</p>
+                  <h2>Learn</h2>
+                  <p>The Jacy Method is a movement-based experience designed to facilitate harmonious community.
+                      Created by elite trainer and fitness model Jacy Cunningham, he believes he has found a unique
+                      mesh point where working out meets working in, where movement meets meditation.</p>
+                  <p>Each guided experience is different and when you leave, you will never be the same. Now, the
+                      question is; Are you ready to experience what it means to connect to another human being? Are
+                      you ready for The Jacy Method?</p>
+                  <p>Press play to learn more about The Jacy Method from founder and creator Jacy Cunningham.</p>
                 </div>
               </Col>
               <Col md={2}></Col>
