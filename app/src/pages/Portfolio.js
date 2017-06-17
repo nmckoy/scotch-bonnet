@@ -94,8 +94,13 @@ class Portfolio extends Component {
             window.open('http://www.summit.co/')
         } else if (param === 'trapjumpin') {
             window.open('http://trapjumpin.com/')
-        }
-        
+        } else if (param === 'lifeisgood') {
+            window.open('http://lifeisgood.com/')
+        } else if (param === 'starwood') {
+            window.open('http://starwoodcapital.com/')
+        } else if (param === 'pilatesplatinum') {
+            window.open('http://pilatesplatinum.com/')
+        }   
     }
     
     render() {
@@ -158,19 +163,25 @@ class Portfolio extends Component {
               		            </Col>
               		        </Row>
               		        <Row style={row_style}>
-              		            <Col xs={4} onClick={ () => {this.openWindow('nike')} } id='portfolio-nike-img'>
+              		            <Col  xs onClick={ () => {this.openWindow('nike')} } id='portfolio-nike-img'>
               		            </Col>
-              		            <Col xs={6} onClick={ () => {this.openWindow('jaybird')} } id='portfolio-jaybird-img'>
+              		            <Col xs onClick={ () => {this.openWindow('lifeisgood')} } id='portfolio-lifeisgood-img'>
               		            </Col>
-              		            <Col xs={2} onClick={ () => {this.openWindow('lokai')} } id='portfolio-lokai-img'>
+              		            <Col xs onClick={ () => {this.openWindow('jaybird')} } id='portfolio-jaybird-img'>
+              		            </Col>
+              		            <Col  xs onClick={ () => {this.openWindow('summit')} } id='portfolio-summit-img'>
+              		            </Col>
+              		            <Col  xs onClick={ () => {this.openWindow('lokai')} } id='portfolio-lokai-img'>
               		            </Col>
               		        </Row>
               		        <Row>
               		            <Col xs onClick={ () => {this.openWindow('qoya')} } id='portfolio-qoya-img'>
               		            </Col>
-              		            <Col xs={1} onClick={ () => {this.openWindow('summit')} } id='portfolio-summit-img'>
-              		            </Col>
               		            <Col xs onClick={ () => {this.openWindow('mikeposner')} } id='portfolio-mikeposner-img'>
+              		            </Col>
+              		            <Col xs onClick={ () => {this.openWindow('starwood')} } id='portfolio-starwood-img'>
+              		            </Col>
+              		            <Col xs onClick={ () => {this.openWindow('pilatesplatinum')} } id='portfolio-pilatesplatinum-img'>
               		            </Col>
               		        </Row>
               		        {/* Partner pics */}

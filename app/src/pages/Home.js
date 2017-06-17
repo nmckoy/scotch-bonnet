@@ -136,15 +136,15 @@ class Home extends Component {
               <Grid >
                 <Row id='home-rows' className='home-rows'> {/* Row 1 */}
                   <Col xs={12} md={6} className='home-row-box-wrapper'>
-                    <div id='home-row1-box1' className='home-box'>
-                      <Link to='/about'>
-                        <Row>
-                          <Col xs={6} className='inner-text'>
-                            Learn More
-                          </Col>
-                        </Row>
-                      </Link>
-                    </div>
+                    <Link to='/about'>
+                      <div id='home-row1-box1' className='home-box'>
+                          <Row>
+                            <Col xs={6} className='inner-text'>
+                              Learn More
+                            </Col>
+                          </Row>
+                      </div>
+                    </Link>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row1-box2' className='home-box'>
@@ -161,15 +161,15 @@ class Home extends Component {
                 </Row>
                 <Row className='home-rows'> {/* Row 2 */}
                   <Col xs={12} mdOffset={2} md={5} className='home-row-box-wrapper'>
-                    <div id='home-row2-box1' className='home-box'>
-                      <Link to='/portfolio'>
-                        <Row>
-                          <Col xs={6} className='inner-text'>
-                            Explore
-                          </Col>
-                        </Row>
-                      </Link>
-                    </div>
+                    <Link to='/portfolio'>
+                      <div id='home-row2-box1' className='home-box'>
+                          <Row>
+                            <Col xs={6} className='inner-text'>
+                              Explore
+                            </Col>
+                          </Row>
+                      </div>
+                    </Link>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row2-box2' className='home-box'>
@@ -180,15 +180,15 @@ class Home extends Component {
                 </Row>
                 <Row className='home-rows'> {/* Row 3 */}
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
-                    <div id='home-row3-box1' className='home-box'>
-                      <Link to='/events'>
-                        <Row>
-                          <Col xs={8} className='inner-text'>
-                            Stay Connected
-                          </Col>
-                        </Row>
-                      </Link>
-                    </div>
+                    <Link to='/events'>
+                      <div id='home-row3-box1' className='home-box'>
+                          <Row>
+                            <Col xs={8} className='inner-text'>
+                              Stay Connected
+                            </Col>
+                          </Row>
+                      </div>
+                    </Link>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row3-box2' className='home-box'>
