@@ -137,6 +137,13 @@ class Home extends Component {
                 <Row id='home-rows' className='home-rows'> {/* Row 1 */}
                   <Col xs={12} md={6} className='home-row-box-wrapper'>
                     <div id='home-row1-box1' className='home-box'>
+                      <Link to='/about'>
+                        <Row>
+                          <Col xs={6} className='inner-text'>
+                            Learn More
+                          </Col>
+                        </Row>
+                      </Link>
                     </div>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
@@ -155,6 +162,13 @@ class Home extends Component {
                 <Row className='home-rows'> {/* Row 2 */}
                   <Col xs={12} mdOffset={2} md={5} className='home-row-box-wrapper'>
                     <div id='home-row2-box1' className='home-box'>
+                      <Link to='/portfolio'>
+                        <Row>
+                          <Col xs={6} className='inner-text'>
+                            Explore
+                          </Col>
+                        </Row>
+                      </Link>
                     </div>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
@@ -167,6 +181,13 @@ class Home extends Component {
                 <Row className='home-rows'> {/* Row 3 */}
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
                     <div id='home-row3-box1' className='home-box'>
+                      <Link to='/events'>
+                        <Row>
+                          <Col xs={8} className='inner-text'>
+                            Stay Connected
+                          </Col>
+                        </Row>
+                      </Link>
                     </div>
                   </Col>
                   <Col xs={12} md={5} className='home-row-box-wrapper'>
@@ -183,7 +204,7 @@ class Home extends Component {
         <div style={ text_content_sub }>
           <Grid>
             <Row className=''> {/* Row 4 */}
-              <Col xs={12} md={6} className='home-row-box-wrapper'>
+              <Col xs={12} md={8} className='home-row-box-wrapper'>
                 <div id='play-vid' className="home-vid-1" >
                   <div className="col-md-4">
                     <i className="fa fa-play-circle" aria-hidden="true"></i>
@@ -194,9 +215,9 @@ class Home extends Component {
                   </div>
                 </div>
               </Col>
-              <Col xs={12} md={5} className='home-row-box-wrapper home-row-box-wrapper-content'>
+              <Col xs={12} md={4} className='home-row-box-wrapper home-row-box-wrapper-content'>
                 <div id='home-row4-box2' className='home-box'>
-                  <h2>Learn</h2>
+                  <h2>Watch</h2>
                   <p>The Jacy Method is a movement-based experience designed to facilitate harmonious community.
                       Created by elite trainer and fitness model Jacy Cunningham, he believes he has found a unique
                       mesh point where working out meets working in, where movement meets meditation.</p>
