@@ -47,7 +47,6 @@ const text_content_sub = {
   background: 'linear-gradient(to right, #6dd5ed, #2193b0)',
 
   textAlign: 'center',
-  padding: '50px 80px',
   textAlign: 'justify'
 }
 
@@ -171,7 +170,7 @@ class Home extends Component {
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} md={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={4} className='home-row-box-wrapper'>
                     <div id='home-row2-box2' className='home-box'>
                       <h2>Portfolio</h2>
                       <p>Check out pictures and videos of the man behind the method, Jacy Cunningham.</p>
@@ -203,7 +202,7 @@ class Home extends Component {
         
         <div style={ text_content_sub }>
           <Grid>
-            <Row className=''> {/* Row 4 */}
+            <Row className='home-rows'> {/* Row 4 */}
               <Col xs={12} md={8} className='home-row-box-wrapper'>
                 <div id='play-vid' className="home-vid-1" >
                   <div className="col-md-4">

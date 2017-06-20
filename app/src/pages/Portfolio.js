@@ -137,7 +137,7 @@ class Portfolio extends Component {
               		            </Col>
               		        </Row>
               		        <Row style={row_style}>
-              		            <Col xs id='play-vid2' className='portfolio-vid-2'>
+              		            <Col xs={12} md={8}id='play-vid2' className='portfolio-vid-2'>
               		                <div className="col-md-4">
                                         <i className="fa fa-play-circle" aria-hidden="true"></i>
                                     </div>
@@ -146,7 +146,7 @@ class Portfolio extends Component {
                                     <div className="col-md-4">
                                     </div>
               		            </Col>
-              		            <Col xs id='play-vid3' className='portfolio-vid-3'>
+              		            <Col xs={12} md={4} id='play-vid3' className='portfolio-vid-3'>
               		                <div className="col-md-4">
                                         <i className="fa fa-play-circle" aria-hidden="true"></i>
                                     </div>
