@@ -66,13 +66,12 @@ const home_content_header1 = {
 class Home extends Component {
   showBoxes() {
     let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
-    // console.log(scrollTop)
-    // if (scrollTop > 200) {
-    //   document.getElementById('home-move-down-arrow').setAttribute('style', 'color: transparent; cursor: default;')
-    // }
-    // if (scrollTop < 200) {
-    //   document.getElementById('home-move-down-arrow').setAttribute('style', 'color: white; cursor: pointer;')
-    // }
+    if (scrollTop > 200) {
+      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: transparent; cursor: default;')
+    }
+    if (scrollTop < 200) {
+      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: white; cursor: pointer;')
+    }
     if (scrollTop > 400) {
       document.getElementById('home-content-text1').setAttribute('style', 'color: white;')
     }
