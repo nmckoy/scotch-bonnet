@@ -124,7 +124,7 @@ class About extends Component {
   		              <h4><strong>The Jacy Method</strong></h4>
   		            </div>
   		            <div>
-  		              <em>
+  		              <p>
   		                Welcome to "The Jacy Method", "Where working out meets working in".
                       In a world fueled by division & duality, we often separate our human experience into various
                       categories.
@@ -162,7 +162,7 @@ class About extends Component {
                       Are you ready to heal?
                       Are you ready to be healed?
                       Are you ready for The Jacy Method?
-  		              </em>
+  		              </p>
   		            </div>
   		          </Col>
   		        </Row>

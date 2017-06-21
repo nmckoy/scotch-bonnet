@@ -145,6 +145,7 @@
       }
       .home-row-box-wrapper {
         position: relative;
+        padding-bottom: 23px;
       }
       .home-row-box-wrapper-content {
         color: #f2f0ee;
@@ -162,9 +163,8 @@
         
         padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(255, 130, 53, 0.3), rgba(48, 232, 200, 0.3)), url("http://i.imgur.com/fpvuHJJ.png");
-      	box-shadow: 13px 15px 20px 0px #888888;
-      	min-height: 200px;
+      	background-image: linear-gradient(rgba(142, 73, 30, 0.5), rgba(33, 154, 133, 0.5)), url("http://i.imgur.com/fpvuHJJ.png");
+      	min-height: 500px;
       	cursor: pointer;
       }
       #home-row1-box2 {
@@ -189,9 +189,8 @@
         
       	padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(38, 87, 235, 0.3), rgba(222, 97, 97, 0.3)), url("http://i.imgur.com/PzNYmGy.jpg");
-      	box-shadow: 13px 15px 20px 0px #888888;
-      	min-height: 200px;
+      	background-image: linear-gradient(rgba(25, 58, 158, 0.3), rgba(132, 57, 57, 0.3)), url("http://i.imgur.com/PzNYmGy.jpg");
+      	min-height: 300px;
       	cursor: pointer;
       }
       #home-row2-box2 {
@@ -216,9 +215,8 @@
         
       	padding-top: 80px;
       	background-size: cover;
-      	background-image: linear-gradient(rgba(249, 212, 35, 0.3), rgba(255, 78, 80, 0.3)), url("http://i.imgur.com/GcoHiEQ.jpg"); /* jacy_headshot.jpg */
-      	box-shadow: 13px 15px 20px 0px #888888;
-      	min-height: 200px;
+      	background-image: linear-gradient(rgba(144, 123, 20, 0.3), rgba(127, 37, 38, 0.3)), url("http://i.imgur.com/GcoHiEQ.jpg"); /* jacy_headshot.jpg */
+      	min-height: 300px;
       	cursor: pointer;
       }
       #home-row3-box2 {
@@ -244,16 +242,39 @@
         text-align: center;
       }
       #home-row1-box1:hover {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("http://i.imgur.com/fpvuHJJ.png");
+        background-image: linear-gradient(rgba(86, 44, 17, 0.5), rgba(20, 93, 80, 0.5)), url("http://i.imgur.com/fpvuHJJ.png");
       }
       #home-row2-box1:hover {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("http://i.imgur.com/PzNYmGy.jpg");
+        background-image: linear-gradient(rgba(12, 30, 84, 0.5), rgba(74, 32, 32, 0.5)), url("http://i.imgur.com/PzNYmGy.jpg");
       }
       #home-row3-box1:hover {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("http://i.imgur.com/GcoHiEQ.jpg");
+        background-image: linear-gradient(rgba(84, 72, 11, 0.5), rgba(70, 20, 21, 0.5)), url("http://i.imgur.com/GcoHiEQ.jpg");
+      }
+      #home-content-text1,
+      #home-content-text2,
+      #home-content-text3 {
+        -o-transition: 1s;
+      	-ms-transition: 1s;
+      	-moz-transition: 1s;
+      	-webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        
+        color: transparent;
+        position: absolute;
+        bottom: 20px;
+        right: 32px;
+        font-size: 16px;
+        font-weight: 700;
+        width: 60%;
+      }
+      .home-mobile-text {
+        display: none;
       }
       .home-box:hover .inner-text {
         color: rgba(0, 0, 0, 0.9);
+      }
+      .home-box .fa {
+        font-size: 20px;
       }
       .home-vid-1 {
       	
@@ -690,6 +711,9 @@
           /*margin-top: 80%;*/
           display: none;
         }
+        .home-mobile-text {
+          display: block;
+        }
         
         #home-row1-box1,
         #home-row2-box1,
@@ -703,11 +727,43 @@
           left: 0;
           position: relative;
         }
+        #home-content-text1,
+        #home-content-text2,
+        #home-content-text3 {
+          display: none;
+        }
+        .home-vid-1:hover {
+          background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/ij29ZzZ.jpg");
+        }
+        .portfolio-vid-2:hover {
+          background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/uJ72B7C.png");
+        }
+        .portfolio-vid-3:hover {
+          background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/HKkqvaB.jpg");
+        }
+        .events-vid-1:hover {
+          background-image: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.2)), url("http://i.imgur.com/tnwEKxT.png");
+        }
       }
       @media (min-width: 1200px) {
         .container {
           width: 1050px;
         }
+        .home-container {
+          width: 100%;
+        }
+      }
+      #home-row1-box1,
+      #home-row2-box1,
+      #home-row3-box1{
+        right: 0px;
+        position: relative;
+      }
+      #home-row1-box2,
+      #home-row2-box2,
+      #home-row3-box2{
+        left: 0;
+        position: relative;
       }
     </style>
   </body>

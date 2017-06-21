@@ -11,7 +11,7 @@ import { removeActiveHome } from '../Utils'
 
 // https://facebook.github.io/react/docs/dom-elements.html#style
 const text_content_lead = {
-  minHeight: '850px',
+  minHeight: '900px',
   color: 'rgb(35, 35, 35)',
   background: '#ECE9E6',  /* fallback for old browsers */
   background: '-webkit-linear-gradient(to right, #FFFFFF, #ECE9E6)',  /* Chrome 10-25, Safari 5.1-6 */
@@ -40,7 +40,7 @@ const arrow_down_grid_style = {
 const bgimg_sub_button = { backgroundColor: 'transparent', fontSize: '25px', color: '#f7f7f7' }
 
 const text_content_sub = {
-  minHeight: '400px',
+  minHeight: '425px',
   color: 'rgb(35, 35, 35)',
   background: '#2193b0',
   background: '-webkit-linear-gradient(to right, #6dd5ed, #2193b0)',
@@ -54,35 +54,33 @@ const bgimg_first_logo_style = { padding: '15px' }
 const bgimg_first_button_style = { padding: '30px' }
 const text_content_sub_pos = { position:'relative' }
 
+const home_content_header1 = {
+    color: 'white',
+    position: 'absolute',
+    top: '20px',
+    left: '32px',
+    fontSize: '26px',
+    fontWeight: '700'
+}
+  
 class Home extends Component {
   showBoxes() {
     let scrollTop = event.srcElement.body.scrollTop // so i guess .srcElement == target
     // console.log(scrollTop)
-    if (scrollTop > 200) {
-      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: transparent; cursor: default;')
-    }
-    if (scrollTop < 200) {
-      document.getElementById('home-move-down-arrow').setAttribute('style', 'color: white; cursor: pointer;')
-    }
+    // if (scrollTop > 200) {
+    //   document.getElementById('home-move-down-arrow').setAttribute('style', 'color: transparent; cursor: default;')
+    // }
+    // if (scrollTop < 200) {
+    //   document.getElementById('home-move-down-arrow').setAttribute('style', 'color: white; cursor: pointer;')
+    // }
     if (scrollTop > 400) {
-      document.getElementById('home-row1-box1').setAttribute('style', 'right: 0px; position: relative;')
+      document.getElementById('home-content-text1').setAttribute('style', 'color: white;')
     }
-    if (scrollTop > 450) {
-      document.getElementById('home-row1-box2').setAttribute('style', 'left: 0px; position: relative;')
-    }
-    
-    if (scrollTop > 600) {
-      document.getElementById('home-row2-box1').setAttribute('style', 'right: 0px; position: relative;')
-    }
-    if (scrollTop > 670) {
-      document.getElementById('home-row2-box2').setAttribute('style', 'left: 0px; position: relative;')
-    }
-    
     if (scrollTop > 920) {
-      document.getElementById('home-row3-box1').setAttribute('style', 'right: 0px; position: relative;')
+      document.getElementById('home-content-text2').setAttribute('style', 'color: white;')
     }
     if (scrollTop > 970) {
-      document.getElementById('home-row3-box2').setAttribute('style', 'left: 0px; position: relative;')
+      document.getElementById('home-content-text3').setAttribute('style', 'color: white;')
     }
   }
   
@@ -132,20 +130,29 @@ class Home extends Component {
         </div>
           
         <div style={ text_content_lead}>
-              <Grid >
+              <Grid className='home-container'>
                 <Row id='home-rows' className='home-rows'> {/* Row 1 */}
-                  <Col xs={12} md={6} className='home-row-box-wrapper'>
+                  <Col xs={12} className=''>
                     <Link to='/about'>
                       <div id='home-row1-box1' className='home-box'>
-                          <Row>
-                            <Col xs={6} className='inner-text'>
-                              Learn More
-                            </Col>
-                          </Row>
+                        <div style={ home_content_header1 }>
+                          Learn More <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </div>
+                        <div id='home-content-text1'>
+                          <h2>About</h2>
+                          <div>
+                            Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
+                            football player and Pro trainer, Jacy has used his skill set to gain entry points into the depth of the
+                            human spirit and help people of all walks of life acknowledge their divine connection thru movement.
+                            For the past 3 years Jacy has served as the in-house Movement Instructor for Summit Powder
+                            Mountain, a start-up based at the foot of Powder Mountain in Eden, Utah. Here he was able to teach
+                            his version of movement to a community full of incredible entrepreneurs and social savants.
+                          </div>
+                        </div>
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} md={5} className='home-row-box-wrapper'>
+                  <Col xs={12} className='home-mobile-text'>
                     <div id='home-row1-box2' className='home-box'>
                       <h2>About</h2>
                       <p>Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
@@ -159,43 +166,38 @@ class Home extends Component {
                   </Col>
                 </Row>
                 <Row className='home-rows'> {/* Row 2 */}
-                  <Col xs={12} mdOffset={2} md={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={6} className=''>
                     <Link to='/portfolio'>
                       <div id='home-row2-box1' className='home-box'>
-                          <Row>
-                            <Col xs={6} className='inner-text'>
-                              Explore
-                            </Col>
-                          </Row>
+                        <div style={ home_content_header1 }>
+                          Explore  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </div>
+                        <div id='home-content-text2'>Check out pictures and videos of the man behind the method, Jacy Cunningham.</div>
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} md={4} className='home-row-box-wrapper'>
+                  <Col xs={12} className='home-mobile-text'>
                     <div id='home-row2-box2' className='home-box'>
                       <h2>Portfolio</h2>
                       <p>Check out pictures and videos of the man behind the method, Jacy Cunningham.</p>
                     </div>
                   </Col>
-                </Row>
-                <Row className='home-rows'> {/* Row 3 */}
-                  <Col xs={12} md={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={6} className=''>
                     <Link to='/events'>
                       <div id='home-row3-box1' className='home-box'>
-                          <Row>
-                            <Col xs={8} className='inner-text'>
-                              Stay Connected
-                            </Col>
-                          </Row>
+                        <div style={ home_content_header1 }>
+                          Stay Connected  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </div>
+                        <div id='home-content-text3' >Jacy Cunningham may be heading to a city near you to teach The Jacy Method. Stay connected to learn more about upcoming events for your chance to experience The Jacy Method.</div>
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} md={5} className='home-row-box-wrapper'>
+                  <Col xs={12} md={5} className='home-mobile-text'>
                     <div id='home-row3-box2' className='home-box'>
                       <h2>Events</h2>
                       <p>Jacy Cunningham may be heading to a city near you to teach The Jacy Method. Stay connected to learn more about upcoming events for your chance to experience The Jacy Method.</p>
                     </div>
                   </Col>
-                  <Col md={2}></Col>
                 </Row>
               </Grid>
         </div>
