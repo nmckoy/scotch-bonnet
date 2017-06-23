@@ -135,67 +135,37 @@ class Home extends Component {
                     <Link to='/about'>
                       <div id='home-row1-box1' className='home-box'>
                         <div style={ home_content_header1 }>
-                          Learn More <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                          About <i className="fa fa-angle-double-right" aria-hidden="true"></i>
                         </div>
                         <div id='home-content-text1'>
-                          <h2>About</h2>
                           <div>
-                            Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
-                            football player and Pro trainer, Jacy has used his skill set to gain entry points into the depth of the
-                            human spirit and help people of all walks of life acknowledge their divine connection thru movement.
-                            For the past 3 years Jacy has served as the in-house Movement Instructor for Summit Powder
-                            Mountain, a start-up based at the foot of Powder Mountain in Eden, Utah. Here he was able to teach
-                            his version of movement to a community full of incredible entrepreneurs and social savants.
+                            Learn more about Jacy Cunningham and The Jacy Method
                           </div>
                         </div>
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} className='home-mobile-text'>
-                    <div id='home-row1-box2' className='home-box'>
-                      <h2>About</h2>
-                      <p>Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
-                        football player and Pro trainer, Jacy has used his skill set to gain entry points into the depth of the
-                        human spirit and help people of all walks of life acknowledge their divine connection thru movement.
-                        For the past 3 years Jacy has served as the in-house Movement Instructor for Summit Powder
-                        Mountain, a start-up based at the foot of Powder Mountain in Eden, Utah. Here he was able to teach
-                        his version of movement to a community full of incredible entrepreneurs and social savants.
-                      </p>
-                    </div>
-                  </Col>
                 </Row>
                 <Row className='home-rows'> {/* Row 2 */}
-                  <Col xs={12} md={6} className=''>
+                  <Col xs={12} md={6} lg={6} className='home-rows-sub'>
                     <Link to='/portfolio'>
                       <div id='home-row2-box1' className='home-box'>
                         <div style={ home_content_header1 }>
-                          Explore  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                          Portfolio  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
                         </div>
-                        <div id='home-content-text2'>Check out pictures and videos of the man behind the method, Jacy Cunningham.</div>
+                        <div id='home-content-text2'>Explore pics and vids of the method</div>
                       </div>
                     </Link>
                   </Col>
-                  <Col xs={12} className='home-mobile-text'>
-                    <div id='home-row2-box2' className='home-box'>
-                      <h2>Portfolio</h2>
-                      <p>Check out pictures and videos of the man behind the method, Jacy Cunningham.</p>
-                    </div>
-                  </Col>
-                  <Col xs={12} md={6} className=''>
+                  <Col xs={12} md={6} lg={6} className='home-rows-sub'>
                     <Link to='/events'>
                       <div id='home-row3-box1' className='home-box'>
                         <div style={ home_content_header1 }>
-                          Stay Connected  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+                          Events  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
                         </div>
-                        <div id='home-content-text3' >Jacy Cunningham may be heading to a city near you to teach The Jacy Method. Stay connected to learn more about upcoming events for your chance to experience The Jacy Method.</div>
+                        <div id='home-content-text3' >Stay connected for upcoming events</div>
                       </div>
                     </Link>
-                  </Col>
-                  <Col xs={12} md={5} className='home-mobile-text'>
-                    <div id='home-row3-box2' className='home-box'>
-                      <h2>Events</h2>
-                      <p>Jacy Cunningham may be heading to a city near you to teach The Jacy Method. Stay connected to learn more about upcoming events for your chance to experience The Jacy Method.</p>
-                    </div>
                   </Col>
                 </Row>
               </Grid>

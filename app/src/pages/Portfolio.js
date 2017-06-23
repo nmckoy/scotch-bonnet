@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import Gallery from 'react-grid-gallery'
 
 import Footer from '../components/Footer'
-import { removeActiveHome, jacy_images, client_images, partner_images } from '../Utils'
+import { removeActiveHome, jacy_images, jacy_images2, client_images, partner_images } from '../Utils'
 // import Gallery from '../components/Gallery'
 
 const text_content_lead = {
@@ -154,6 +154,12 @@ class Portfolio extends Component {
                                     </div>
                                     <div className="col-md-4">
                                     </div>
+              		            </Col>
+              		        </Row>
+              		        <Row >
+              		            <Col xs>
+              		                <Gallery images={jacy_images2} >
+              		                </Gallery>
               		            </Col>
               		        </Row>
               		        {/* Client pics */}

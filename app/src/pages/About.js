@@ -91,9 +91,9 @@ class About extends Component {
   		            </Col>
   		        </Row>
   		        <Row style={ Object.assign({}, content_sub_style, title_row_style) }>
-  		          <Col xs={12} md={7} className='about-content-img-1'>
+  		          <Col xs={12} md={8} className='about-content-img-1'>
   		          </Col>
-  		          <Col xs={12} md={5}>
+  		          <Col xs={12} md={4}>
   		            <div>
   		              <h4><strong><em>The Jacy Method: Where working out meets working in and movement meets meditation.</em></strong></h4>
   		            </div>
@@ -102,18 +102,16 @@ class About extends Component {
   		            <div>
   		            <h4><strong>MEET JACY CUNNINGHAM:</strong></h4>
   		            <div style={ about_text_style }>
-                    Jacy Cunningham, born and raised in Washington, DC, is simply put a "Lover of life". Former collegiate
-                    football player and pro trainer, Jacy has used his skill set to gain entry points into the depth of the
-                    human spirit and help people of all walks of life acknowledge their divine connection thru movement.
-                    Jacy served as the in-house Movement Instructor for Summit Powder Mountain, a start-up based at
-                    the foot of Powder Mountain in Eden, Utah. Here he was able to teach his version of movement to a
-                    community full of incredible entrepreneurs and social savants.
-                  </div>
-                  <br></br> {/* lol */}
-                  <div style={ about_text_style }>
-                    In 2015, after a three year stint in Utah teaching for the Summit Series group Jacy decided to create
-                    his own method of training called "The Jacy Method". Which simply put, is the mesh point where
-                    working out meets working in.
+                    Born and raised in Washington, DC, Jacy Cunningham is simply put a "lover of life." As a pro trainer 
+                    and former college football player, Jacy has gained a wealth of knowledge which he applies to every 
+                    aspect of life. Jacy has honed his skill set and used it to not only gain entry into the depth of the 
+                    human spirit, but also to help people of all walks of life acknowledge their divine connection through 
+                    movement. Jacy served as the in-house Movement Instructor for Summit Powder Mountain, a start-up based 
+                    at the foot of Powder Mountain in Eden, Utah. Here he was able to teach his version of movement to a 
+                    community full of incredible entrepreneurs and social savants. After a three year stint in Utah teaching 
+                    for the Summit Series Group, Jacy decided to create his own method of training called The Jacy Method 
+                    in 2015. Over the past two years, Jacy has fine-tuned this method of exercise into the perfect union 
+                    where working out meets working in.
                   </div>
                   </div>
   		          </Col>
@@ -121,7 +119,7 @@ class About extends Component {
   		        <Row style={ title_row_style }>
   		          <Col xs >
   		            <div style={ content_end_header_style }>
-  		              <h4><strong>The Jacy Method</strong></h4>
+  		              <h4><strong>THE JACY METHOD</strong></h4>
   		            </div>
   		            <div>
   		              <p>
