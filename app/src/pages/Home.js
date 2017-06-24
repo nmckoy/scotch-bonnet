@@ -153,7 +153,7 @@ class Home extends Component {
                         <div style={ home_content_header1 }>
                           Portfolio  <i className="fa fa-angle-double-right" aria-hidden="true"></i>
                         </div>
-                        <div id='home-content-text2'>Explore pics and vids of the method</div>
+                        <div id='home-content-text2'>Explore pics and vids of the man behind the method</div>
                       </div>
                     </Link>
                   </Col>

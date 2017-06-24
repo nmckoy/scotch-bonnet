@@ -253,6 +253,18 @@
       #home-row3-box1:hover {
         background-image: linear-gradient(rgba(84, 72, 11, 0.5), rgba(70, 20, 21, 0.5)), url("http://i.imgur.com/GcoHiEQ.jpg");
       }
+      #home-row1-box1,
+      #home-row2-box1,
+      #home-row3-box1{
+        right: 0px;
+        position: relative;
+      }
+      #home-row1-box2,
+      #home-row2-box2,
+      #home-row3-box2{
+        left: 0;
+        position: relative;
+      }
       #home-content-text1,
       #home-content-text2,
       #home-content-text3 {
@@ -722,6 +734,7 @@
         #home-row3-box1{
           right: 0px;
           position: relative;
+          background-position: center;
         }
         #home-row1-box2,
         #home-row2-box2,
@@ -749,6 +762,13 @@
           background-size: contain;
         }
       }
+      @media (max-width: 767px) {
+        #home-content-text1,
+        #home-content-text2,
+        #home-content-text3 {
+          display: none;
+        }
+      }
       @media (min-width: 1200px) {
         .container {
           width: 1050px;
@@ -756,18 +776,6 @@
         .home-container {
           width: 100%;
         }
-      }
-      #home-row1-box1,
-      #home-row2-box1,
-      #home-row3-box1{
-        right: 0px;
-        position: relative;
-      }
-      #home-row1-box2,
-      #home-row2-box2,
-      #home-row3-box2{
-        left: 0;
-        position: relative;
       }
     </style>
   </body>
